@@ -21,7 +21,7 @@ Optional environment variables:
 - `MAX_STREET_IMAGES` (default: `10`)
 - `UPDATE_SHARED_EVIDENCE_ROOTS` (optional comma-separated cache roots)
 
-## Minimal Dependencies  - Python 3.10+ `openai` If provided, `requirements.txt` corresponds to the Python environment used to run this code.`r`n
+## Minimal Dependencies  - Python 3.10+ openai If provided, requirements.txt corresponds to the Python environment used to run this code.
 ## Usage
 
 Import and call `run_single_case(...)` from `main_update.py`.
