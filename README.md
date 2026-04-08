@@ -9,7 +9,8 @@ This folder contains a cleaned subset of the Graph-of-Evidence (GoE) codebase fo
 - `graph/`: GoE construction, augmentation, edge weighting, factor definitions, and final solver.
 - `core/`: schemas, task parsing, task guidance, API wrapper, and I/O utilities.
 
-## Required Environment`r`n`r`nBefore running, add your OpenRouter API key in `core/llm_api.py` by replacing the `YOUR_OPENROUTER_API_KEY` placeholder.`r`n`r`nAlternatively, you may provide the key through the `OPENROUTER_API_KEY` environment variable.`r`n
+## Required Environment：
+Before running, add your OpenRouter API key in `core/llm_api.py` by replacing the `YOUR_OPENROUTER_API_KEY` placeholder. Alternatively, you may provide the key through the `OPENROUTER_API_KEY` environment variable.
 Optional environment variables:
 
 - `OPENROUTER_BASE_URL` (default: `https://openrouter.ai/api/v1`)
@@ -20,7 +21,7 @@ Optional environment variables:
 - `MAX_STREET_IMAGES` (default: `10`)
 - `UPDATE_SHARED_EVIDENCE_ROOTS` (optional comma-separated cache roots)
 
-## Minimal Dependencies`r`n`r`n- Python 3.10+`r`n- `openai``r`n`r`nIf provided, `requirements.txt` corresponds to the Python environment used to run this code.`r`n
+## Minimal Dependencies  - Python 3.10+ `openai` If provided, `requirements.txt` corresponds to the Python environment used to run this code.`r`n
 ## Usage
 
 Import and call `run_single_case(...)` from `main_update.py`.
