@@ -1,0 +1,4524 @@
+{
+  "meta": {
+    "case_id": "16493_19743",
+    "setting": "sample_run",
+    "target_field": "GDP",
+    "graph_version": "goe_augmented_v3",
+    "balanced_aggregation": true
+  },
+  "task": {
+    "id": "TASK::GDP",
+    "task_name": "GDP",
+    "target_field": "GDP",
+    "normalized_range": [
+      0.0,
+      9.9
+    ]
+  },
+  "evidences": [
+    {
+      "id": "E_sat_0",
+      "modality": "satellite",
+      "observation": "The image shows a densely built-up urban area with a grid-like pattern of buildings. There are patches of greenery and open spaces, as well as visible roads and water bodies. The overall layout suggests a mix of residential and possibly commercial structures, but no clear indicators of major economic hubs or infrastructure are apparent.",
+      "implication": {
+        "GDP": 0.2
+      },
+      "confidence": 0.7,
+      "source": "sample_case\\images\\satellite.png",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\satellite.png",
+      "region_scope": null,
+      "semantic_type": "satellite_structured",
+      "spatial_layout": {
+        "density": "high",
+        "building_pattern": "grid-like, repetitive, and uniform",
+        "road_structure": "visible but not highly dense or complex",
+        "land_use": "mixed, with residential areas, open spaces, and some greenery"
+      },
+      "key_elements": [
+        {
+          "type": "built_form",
+          "description": "Dense, uniform residential or mixed-use buildings"
+        },
+        {
+          "type": "land_use",
+          "description": "Presence of open spaces and greenery interspersed with built-up areas"
+        }
+      ],
+      "local_variation": "Minimal variation in building density and pattern, suggesting a consistent urban fabric",
+      "coverage": "The image covers a large, continuous urban area with no significant gaps in development",
+      "scene_type": "built_up_dominant",
+      "informativeness": 0.5
+    },
+    {
+      "id": "E_st_0",
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of buildings, some of which appear to be commercial establishments. The buildings have bright, colorful facades, and there are signs of activity, such as people walking and some stalls or shops. The street is unpaved, and there is minimal greenery. A few vehicles are visible, indicating some level of mobility. The overall impression is of a modest, possibly low-income area with basic commercial activity.",
+      "implication": {
+        "GDP": -0.3
+      },
+      "confidence": 0.8,
+      "source": "sample_case\\images\\street_0.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_0.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "Moderate; buildings show signs of wear but are functional. The bright colors suggest some level of upkeep, though not luxurious.",
+        "street_activity": "Low; there are a few people and some stalls, but overall activity appears limited.",
+        "commercial_presence": "Present; there are visible shops and stalls, indicating some commercial activity, but the scale is small.",
+        "greenery": "Minimal; there are a few scattered trees, but overall greenery is sparse.",
+        "transport_signals": "Basic; a few vehicles are visible, suggesting some level of mobility, but no advanced transport infrastructure is apparent."
+      },
+      "key_elements": [
+        {
+          "type": "Building",
+          "description": "A prominent blue and yellow building with a corrugated metal roof, indicating commercial use and basic construction materials."
+        },
+        {
+          "type": "Street",
+          "description": "Unpaved and dusty, suggesting limited infrastructure investment."
+        },
+        {
+          "type": "Activity",
+          "description": "Low-level activity with a few people and stalls, indicating a modest level of economic activity."
+        }
+      ],
+      "local_variation": "The area shows a mix of commercial and possibly residential uses, with a focus on basic functionality rather than luxury or advanced development.",
+      "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+      "scene_type": "built_environment_visible",
+      "informativeness": 0.6
+    },
+    {
+      "id": "E_st_1",
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of residential and commercial structures. The buildings appear to be modest in size and construction, with some showing signs of wear. The street is unpaved and appears to be in a state of disrepair. There is a small commercial structure on the right side, but overall activity and amenities are limited. The surrounding area includes some vegetation and utility poles, but the overall impression is one of a less developed urban environment.",
+      "implication": {
+        "GDP": -0.4
+      },
+      "confidence": 0.7,
+      "source": "sample_case\\images\\street_1.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_1.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "moderate wear, simple construction",
+        "street_activity": "low, minimal visible activity",
+        "commercial_presence": "limited, small commercial structure visible",
+        "greenery": "sparse, some trees and vegetation present",
+        "transport_signals": "none visible"
+      },
+      "key_elements": [
+        {
+          "type": "building",
+          "description": "Multi-story residential building with visible wear and simple design"
+        },
+        {
+          "type": "commercial structure",
+          "description": "Small, modest commercial setup on the right side of the street"
+        },
+        {
+          "type": "street condition",
+          "description": "Unpaved, uneven, and in poor condition"
+        }
+      ],
+      "local_variation": "The area shows signs of limited development and maintenance, with a focus on basic residential and small-scale commercial activities.",
+      "coverage": "The image provides a wide-angle view of the street and surrounding buildings, but lacks detailed information on broader urban functionality or amenities.",
+      "scene_type": "weakly_informative",
+      "informativeness": 0.3
+    },
+    {
+      "id": "E_st_2",
+      "modality": "street",
+      "observation": "The image depicts a street scene in a low-density urban or peri-urban area. The buildings appear to be simple, with some residential and small commercial structures. The road is unpaved, and there is minimal activity visible. The area has basic infrastructure, such as streetlights and utility poles, but the overall condition suggests limited maintenance and development.",
+      "implication": {
+        "GDP": -0.4
+      },
+      "confidence": 0.8,
+      "source": "sample_case\\images\\street_2.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_2.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "moderate, with simple construction and some signs of wear",
+        "street_activity": "low, with a few individuals visible but no significant traffic or commercial activity",
+        "commercial_presence": "minimal, with a small shop visible but no signs of a vibrant commercial district",
+        "greenery": "sparse, with some grass and small plants but no significant landscaping",
+        "transport_signals": "basic, with streetlights present but no visible traffic signals or signage indicating advanced infrastructure"
+      },
+      "key_elements": [
+        {
+          "type": "building",
+          "description": "simple, low-rise structures with basic construction materials"
+        },
+        {
+          "type": "road",
+          "description": "unpaved, suggesting limited infrastructure development"
+        },
+        {
+          "type": "commercial structure",
+          "description": "a small shop with basic signage, indicating limited commercial activity"
+        },
+        {
+          "type": "infrastructure",
+          "description": "basic streetlights and utility poles, but no advanced urban amenities"
+        }
+      ],
+      "local_variation": "The area shows signs of a developing or low-income urban setting with limited commercial and infrastructure development.",
+      "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+      "scene_type": "built_environment_visible",
+      "informativeness": 0.6
+    },
+    {
+      "id": "E_st_3",
+      "modality": "street",
+      "observation": "The image shows a rural or semi-urban area with a dirt path, a small structure with a metal gate, and some greenery. There are no visible commercial activities, high-quality infrastructure, or significant urban functionality. The scene appears to be sparsely populated and lacks clear signs of economic vibrancy.",
+      "implication": {
+        "GDP": -0.3
+      },
+      "confidence": 0.6,
+      "source": "sample_case\\images\\street_3.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_3.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "moderate",
+        "street_activity": "low",
+        "commercial_presence": "absent",
+        "greenery": "present but sparse",
+        "transport_signals": "absent"
+      },
+      "key_elements": [
+        {
+          "type": "building",
+          "description": "A small, simple structure with a metal gate, suggesting limited infrastructure."
+        },
+        {
+          "type": "path",
+          "description": "A dirt path, indicating low maintenance and limited accessibility."
+        },
+        {
+          "type": "greenery",
+          "description": "Scattered trees and vegetation, but no significant landscaping or urban green spaces."
+        }
+      ],
+      "local_variation": "The area appears rural or semi-urban with minimal development.",
+      "coverage": "The image covers a small, localized area with limited visible context.",
+      "scene_type": "weakly_informative",
+      "informativeness": 0.2
+    },
+    {
+      "id": "E_st_4",
+      "modality": "street",
+      "observation": "The image shows a street view with a mix of buildings, including a multi-story structure with red and white facades, and several smaller, unfinished or under-construction buildings. The area appears to be in a developing state, with visible construction materials and incomplete structures. The street is relatively quiet, with no visible activity or traffic. The environment includes some greenery, but it is sparse. There are utility poles and wires, indicating basic infrastructure.",
+      "implication": {
+        "GDP": -0.2
+      },
+      "confidence": 0.6,
+      "source": "sample_case\\images\\street_4.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_4.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "Mixed; some buildings appear well-maintained, while others are under construction or unfinished.",
+        "street_activity": "Low; no visible activity or traffic on the street.",
+        "commercial_presence": "Unclear; there are no clear signs of commercial activity or businesses.",
+        "greenery": "Sparse; some greenery is visible but not abundant.",
+        "transport_signals": "Basic; utility poles and wires are present, indicating some infrastructure, but no advanced transport signals are visible."
+      },
+      "key_elements": [
+        {
+          "type": "Building",
+          "description": "A multi-story building with red and white facades, appearing relatively well-maintained."
+        },
+        {
+          "type": "Construction",
+          "description": "Several unfinished or under-construction buildings, indicating development activity."
+        },
+        {
+          "type": "Infrastructure",
+          "description": "Utility poles and wires, suggesting basic infrastructure but no advanced transport signals."
+        }
+      ],
+      "local_variation": "The area shows a mix of developed and developing elements, with some maintained structures and others in the process of construction.",
+      "coverage": "The image provides a partial view of the street and surrounding buildings, but lacks comprehensive details on commercial activity or advanced infrastructure.",
+      "scene_type": "weakly_informative",
+      "informativeness": 0.3
+    },
+    {
+      "id": "E_st_5",
+      "modality": "street",
+      "observation": "The image shows a street scene with a mix of residential and commercial buildings. There is a small vendor setup under an umbrella, indicating some commercial activity. The buildings appear to be of modest construction, with some showing signs of wear. The street is relatively quiet, with minimal visible activity or traffic. The area includes a mix of older, possibly low-rise structures and some newer, taller buildings in the background. There is limited greenery visible, and the overall impression is one of a functional but not particularly vibrant urban environment.",
+      "implication": {
+        "GDP": -0.2
+      },
+      "confidence": 0.7,
+      "source": "sample_case\\images\\street_5.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_5.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "moderate; some buildings show signs of wear, while others appear newer and better maintained",
+        "street_activity": "low; minimal visible activity, with only a vendor and a few pedestrians",
+        "commercial_presence": "limited; a small vendor setup under an umbrella is the primary commercial presence",
+        "greenery": "sparse; very little greenery is visible in the scene",
+        "transport_signals": "unclear; no clear transport signals or infrastructure are visible"
+      },
+      "key_elements": [
+        {
+          "type": "commercial_activity",
+          "description": "A small vendor setup under an umbrella, indicating some local commerce"
+        },
+        {
+          "type": "building_condition",
+          "description": "A mix of older, modest buildings and some newer structures in the background"
+        },
+        {
+          "type": "street_quality",
+          "description": "The street appears functional but not well-maintained, with a simple paved surface"
+        }
+      ],
+      "local_variation": "The scene shows a mix of older and newer buildings, suggesting some development but not high-density commercial activity.",
+      "coverage": "The image provides a panoramic view of the street, capturing a wide range of buildings and the immediate surroundings.",
+      "scene_type": "mixed",
+      "informativeness": 0.5
+    },
+    {
+      "id": "E_st_6",
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of commercial and residential buildings. There are visible signs of activity, such as people walking and a parked motorbike. The buildings show a mix of conditions, with some appearing well-maintained and others showing signs of wear. Commercial signage and storefronts are present, indicating some level of economic activity. The street itself appears to be unpaved, and there is a lack of significant greenery. The overall scene suggests a moderately active but not highly developed urban environment.",
+      "implication": {
+        "GDP": 0.2
+      },
+      "confidence": 0.7,
+      "source": "sample_case\\images\\street_6.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_6.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "Mixed; some buildings appear well-maintained, while others show signs of wear.",
+        "street_activity": "Moderate; there are people walking and a parked motorbike, indicating some activity.",
+        "commercial_presence": "Present; there are storefronts and commercial signage, suggesting local businesses.",
+        "greenery": "Minimal; there is little to no visible greenery in the scene.",
+        "transport_signals": "Minimal; no clear traffic signals or road markings are visible."
+      },
+      "key_elements": [
+        {
+          "type": "Building",
+          "description": "A multi-story building with commercial storefronts on the ground floor and residential or office spaces above."
+        },
+        {
+          "type": "Transport",
+          "description": "A parked motorbike, indicating local transportation methods."
+        },
+        {
+          "type": "Commercial Activity",
+          "description": "Visible storefronts and signage, suggesting local businesses and economic activity."
+        },
+        {
+          "type": "Street Condition",
+          "description": "The street appears unpaved, indicating a less developed infrastructure."
+        }
+      ],
+      "local_variation": "The scene shows a mix of commercial and residential uses, with varying building conditions and moderate street activity.",
+      "coverage": "The image provides a panoramic view of the street, capturing a broad range of elements including buildings, street activity, and commercial presence.",
+      "scene_type": "mixed",
+      "informativeness": 0.6
+    },
+    {
+      "id": "E_st_7",
+      "modality": "street",
+      "observation": "The image shows a street scene with a mix of residential and possibly commercial buildings. There is a pink building with a black door, a white vehicle parked nearby, and a blue shipping container with text on it. The area appears to have some greenery, including a tree, and a mix of paved and unpaved surfaces. The overall environment suggests a modest urban setting with limited activity and infrastructure.",
+      "implication": {
+        "GDP": -0.2
+      },
+      "confidence": 0.6,
+      "source": "sample_case\\images\\street_7.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_7.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "moderate; some buildings appear functional but not high-end, with visible wear on structures like the shipping container and fence.",
+        "street_activity": "low; minimal visible activity, with only one person standing near the pink building.",
+        "commercial_presence": "unclear; the pink building could be commercial, but there are no clear signs of active businesses or services.",
+        "greenery": "moderate; there is a tree and some grass, but overall greenery is not abundant.",
+        "transport_signals": "limited; a white vehicle is parked, but there are no visible traffic signals or infrastructure indicating high mobility."
+      },
+      "key_elements": [
+        {
+          "type": "building",
+          "description": "A pink building with a black door, possibly residential or commercial, showing moderate maintenance."
+        },
+        {
+          "type": "vehicle",
+          "description": "A white vehicle parked near the building, indicating some level of transportation activity."
+        },
+        {
+          "type": "shipping_container",
+          "description": "A blue shipping container with text, suggesting possible storage or commercial use, but not actively engaged in commerce."
+        }
+      ],
+      "local_variation": "The scene shows a mix of structures, including a pink building, a shipping container, and a fence, indicating a potentially mixed-use area with some commercial or storage functions.",
+      "coverage": "The image provides a partial view of the street and surrounding area, but lacks comprehensive details about the broader urban context.",
+      "scene_type": "weakly_informative",
+      "informativeness": 0.3
+    },
+    {
+      "id": "E_st_8",
+      "modality": "street",
+      "observation": "The image shows a street view of a semi-urban area with a mix of residential and possibly commercial buildings. The road is unpaved, and there is visible greenery along the sides. The buildings appear to be of moderate quality, with some showing signs of wear. There are utility poles and wires, indicating basic infrastructure. The scene is relatively quiet with no visible traffic or pedestrians.",
+      "implication": {
+        "GDP": -0.2
+      },
+      "confidence": 0.6,
+      "source": "sample_case\\images\\street_8.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_8.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "Moderate, with some signs of wear and basic construction materials.",
+        "street_activity": "Low, with no visible traffic or pedestrians.",
+        "commercial_presence": "Unclear, as there are no distinct commercial signs or activity visible.",
+        "greenery": "Present along the sides of the road, indicating some level of landscaping.",
+        "transport_signals": "Minimal, with no visible traffic lights or signage."
+      },
+      "key_elements": [
+        {
+          "type": "Road condition",
+          "description": "The road is unpaved, suggesting limited infrastructure investment."
+        },
+        {
+          "type": "Building condition",
+          "description": "Buildings appear to be of moderate quality, with some signs of wear."
+        },
+        {
+          "type": "Greenery",
+          "description": "Greenery is present along the road, indicating some level of landscaping."
+        }
+      ],
+      "local_variation": "The area appears to be a mix of residential and possibly commercial use, but lacks clear commercial activity or high-quality infrastructure.",
+      "coverage": "The image provides a wide-angle view of the street and surrounding area, but lacks detailed information on commercial activity or high-quality urban features.",
+      "scene_type": "weakly_informative",
+      "informativeness": 0.3
+    },
+    {
+      "id": "E_st_9",
+      "modality": "street",
+      "observation": "The image depicts a street scene with a mix of residential and commercial buildings. There is a multi-story building with balconies on the right, and a single-story commercial building on the left. The street appears to have some activity, with a few people visible and vehicles parked along the side. The buildings show signs of wear, and the overall environment suggests a moderately active urban area.",
+      "implication": {
+        "GDP": 0.2
+      },
+      "confidence": 0.7,
+      "source": "sample_case\\images\\street_9.jpg",
+      "source_type": "unknown",
+      "source_name": "sample_case\\images\\street_9.jpg",
+      "region_scope": null,
+      "semantic_type": "street_structured",
+      "spatial_layout": {
+        "building_condition": "Moderate wear, with some visible aging on the buildings but no significant signs of disrepair.",
+        "street_activity": "Low to moderate activity, with a few pedestrians and parked vehicles, indicating some level of daily use.",
+        "commercial_presence": "Present, with visible storefronts and signs, suggesting local commerce.",
+        "greenery": "Minimal, with no significant green spaces or trees visible in the immediate area.",
+        "transport_signals": "Basic, with visible roads and sidewalks, but no advanced traffic infrastructure or signage."
+      },
+      "key_elements": [
+        {
+          "type": "Building",
+          "description": "A multi-story residential building with balconies, indicating a mix of living spaces."
+        },
+        {
+          "type": "Commercial Building",
+          "description": "A single-story building with visible storefronts, suggesting local businesses."
+        },
+        {
+          "type": "Street Activity",
+          "description": "Low to moderate pedestrian and vehicular activity, indicating some level of daily urban life."
+        },
+        {
+          "type": "Infrastructure",
+          "description": "Basic road and sidewalk infrastructure, with no advanced urban amenities visible."
+        }
+      ],
+      "local_variation": "The scene shows a mix of residential and commercial uses, with moderate activity and some signs of wear on the buildings. The presence of storefronts suggests local commerce, but the overall environment does not indicate high urban intensity or advanced infrastructure.",
+      "coverage": "The image provides a partial view of the street and surrounding buildings, capturing a mix of residential and commercial elements but not a comprehensive view of the entire area.",
+      "scene_type": "mixed",
+      "informativeness": 0.5
+    }
+  ],
+  "claims": [
+    {
+      "id": "C_GDP_0",
+      "task": "GDP",
+      "hypothesis": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average.",
+      "estimate": 4.76864925063221,
+      "confidence": 0.75,
+      "support_eids": [
+        "E_sat_0",
+        "E_st_0",
+        "E_st_1",
+        "E_st_2",
+        "E_st_3",
+        "E_st_4",
+        "E_st_5",
+        "E_st_6",
+        "E_st_7",
+        "E_st_8",
+        "E_st_9"
+      ],
+      "contradict_eids": [],
+      "status": "provisional"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC::sample_case\\images\\satellite.png",
+      "source_name": "sample_case\\images\\satellite.png",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_0.jpg",
+      "source_name": "sample_case\\images\\street_0.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_1.jpg",
+      "source_name": "sample_case\\images\\street_1.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_2.jpg",
+      "source_name": "sample_case\\images\\street_2.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_3.jpg",
+      "source_name": "sample_case\\images\\street_3.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_4.jpg",
+      "source_name": "sample_case\\images\\street_4.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_5.jpg",
+      "source_name": "sample_case\\images\\street_5.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_6.jpg",
+      "source_name": "sample_case\\images\\street_6.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_7.jpg",
+      "source_name": "sample_case\\images\\street_7.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_8.jpg",
+      "source_name": "sample_case\\images\\street_8.jpg",
+      "source_type": "unknown"
+    },
+    {
+      "id": "SRC::sample_case\\images\\street_9.jpg",
+      "source_name": "sample_case\\images\\street_9.jpg",
+      "source_type": "unknown"
+    }
+  ],
+  "relations": [
+    {
+      "id": "edge::E_sat_0::produced_by::SRC::sample_case\\images\\satellite.png",
+      "from_id": "E_sat_0",
+      "to_id": "SRC::sample_case\\images\\satellite.png",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_0::produced_by::SRC::sample_case\\images\\street_0.jpg",
+      "from_id": "E_st_0",
+      "to_id": "SRC::sample_case\\images\\street_0.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_1::produced_by::SRC::sample_case\\images\\street_1.jpg",
+      "from_id": "E_st_1",
+      "to_id": "SRC::sample_case\\images\\street_1.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_2::produced_by::SRC::sample_case\\images\\street_2.jpg",
+      "from_id": "E_st_2",
+      "to_id": "SRC::sample_case\\images\\street_2.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_3::produced_by::SRC::sample_case\\images\\street_3.jpg",
+      "from_id": "E_st_3",
+      "to_id": "SRC::sample_case\\images\\street_3.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_4::produced_by::SRC::sample_case\\images\\street_4.jpg",
+      "from_id": "E_st_4",
+      "to_id": "SRC::sample_case\\images\\street_4.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_5::produced_by::SRC::sample_case\\images\\street_5.jpg",
+      "from_id": "E_st_5",
+      "to_id": "SRC::sample_case\\images\\street_5.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_6::produced_by::SRC::sample_case\\images\\street_6.jpg",
+      "from_id": "E_st_6",
+      "to_id": "SRC::sample_case\\images\\street_6.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_7::produced_by::SRC::sample_case\\images\\street_7.jpg",
+      "from_id": "E_st_7",
+      "to_id": "SRC::sample_case\\images\\street_7.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_8::produced_by::SRC::sample_case\\images\\street_8.jpg",
+      "from_id": "E_st_8",
+      "to_id": "SRC::sample_case\\images\\street_8.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_9::produced_by::SRC::sample_case\\images\\street_9.jpg",
+      "from_id": "E_st_9",
+      "to_id": "SRC::sample_case\\images\\street_9.jpg",
+      "relation_type": "produced_by",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_sat_0::support::C_GDP_0",
+      "from_id": "E_sat_0",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_0::support::C_GDP_0",
+      "from_id": "E_st_0",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_1::support::C_GDP_0",
+      "from_id": "E_st_1",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_2::support::C_GDP_0",
+      "from_id": "E_st_2",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_3::support::C_GDP_0",
+      "from_id": "E_st_3",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_4::support::C_GDP_0",
+      "from_id": "E_st_4",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_5::support::C_GDP_0",
+      "from_id": "E_st_5",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_6::support::C_GDP_0",
+      "from_id": "E_st_6",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_7::support::C_GDP_0",
+      "from_id": "E_st_7",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_8::support::C_GDP_0",
+      "from_id": "E_st_8",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::E_st_9::support::C_GDP_0",
+      "from_id": "E_st_9",
+      "to_id": "C_GDP_0",
+      "relation_type": "support",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::C_GDP_0::targets::TASK::GDP",
+      "from_id": "C_GDP_0",
+      "to_id": "TASK::GDP",
+      "relation_type": "targets",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_0",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_0",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_1",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_1",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_2",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_2",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_3",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_3",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_4",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_4",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_5",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_6",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_7",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_8",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::redundant::E_st_9",
+      "from_id": "E_sat_0",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_1",
+      "from_id": "E_st_0",
+      "to_id": "E_st_1",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_2",
+      "from_id": "E_st_0",
+      "to_id": "E_st_2",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_3",
+      "from_id": "E_st_0",
+      "to_id": "E_st_3",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_4",
+      "from_id": "E_st_0",
+      "to_id": "E_st_4",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_5",
+      "from_id": "E_st_0",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_6",
+      "from_id": "E_st_0",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_7",
+      "from_id": "E_st_0",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_8",
+      "from_id": "E_st_0",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::redundant::E_st_9",
+      "from_id": "E_st_0",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_2",
+      "from_id": "E_st_1",
+      "to_id": "E_st_2",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_3",
+      "from_id": "E_st_1",
+      "to_id": "E_st_3",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_4",
+      "from_id": "E_st_1",
+      "to_id": "E_st_4",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_5",
+      "from_id": "E_st_1",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_6",
+      "from_id": "E_st_1",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_7",
+      "from_id": "E_st_1",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_8",
+      "from_id": "E_st_1",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::redundant::E_st_9",
+      "from_id": "E_st_1",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_3",
+      "from_id": "E_st_2",
+      "to_id": "E_st_3",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_4",
+      "from_id": "E_st_2",
+      "to_id": "E_st_4",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_5",
+      "from_id": "E_st_2",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_6",
+      "from_id": "E_st_2",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_7",
+      "from_id": "E_st_2",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_8",
+      "from_id": "E_st_2",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::redundant::E_st_9",
+      "from_id": "E_st_2",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_4",
+      "from_id": "E_st_3",
+      "to_id": "E_st_4",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_5",
+      "from_id": "E_st_3",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_6",
+      "from_id": "E_st_3",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_7",
+      "from_id": "E_st_3",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_8",
+      "from_id": "E_st_3",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::redundant::E_st_9",
+      "from_id": "E_st_3",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::redundant::E_st_5",
+      "from_id": "E_st_4",
+      "to_id": "E_st_5",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::redundant::E_st_6",
+      "from_id": "E_st_4",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::redundant::E_st_7",
+      "from_id": "E_st_4",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::redundant::E_st_8",
+      "from_id": "E_st_4",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::redundant::E_st_9",
+      "from_id": "E_st_4",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::redundant::E_st_6",
+      "from_id": "E_st_5",
+      "to_id": "E_st_6",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::redundant::E_st_7",
+      "from_id": "E_st_5",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::redundant::E_st_8",
+      "from_id": "E_st_5",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::redundant::E_st_9",
+      "from_id": "E_st_5",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::redundant::E_st_7",
+      "from_id": "E_st_6",
+      "to_id": "E_st_7",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::redundant::E_st_8",
+      "from_id": "E_st_6",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::redundant::E_st_9",
+      "from_id": "E_st_6",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::redundant::E_st_8",
+      "from_id": "E_st_7",
+      "to_id": "E_st_8",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::redundant::E_st_9",
+      "from_id": "E_st_7",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::redundant::E_st_9",
+      "from_id": "E_st_8",
+      "to_id": "E_st_9",
+      "relation_type": "candidate_redundancy",
+      "observed": false,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_density_intensity",
+      "from_id": "E_sat_0",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_commercial_activity",
+      "from_id": "E_sat_0",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_residential_quality",
+      "from_id": "E_sat_0",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_connectivity_accessibility",
+      "from_id": "E_sat_0",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_green_amenity",
+      "from_id": "E_sat_0",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_industrial_activity",
+      "from_id": "E_sat_0",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_public_service_presence",
+      "from_id": "E_sat_0",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_sat_0::efactor::F_built_environment_order",
+      "from_id": "E_sat_0",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_density_intensity",
+      "from_id": "E_st_0",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_commercial_activity",
+      "from_id": "E_st_0",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_residential_quality",
+      "from_id": "E_st_0",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_0",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_green_amenity",
+      "from_id": "E_st_0",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_industrial_activity",
+      "from_id": "E_st_0",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_public_service_presence",
+      "from_id": "E_st_0",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_0::efactor::F_built_environment_order",
+      "from_id": "E_st_0",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_density_intensity",
+      "from_id": "E_st_1",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_commercial_activity",
+      "from_id": "E_st_1",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_residential_quality",
+      "from_id": "E_st_1",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_1",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_green_amenity",
+      "from_id": "E_st_1",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_industrial_activity",
+      "from_id": "E_st_1",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_public_service_presence",
+      "from_id": "E_st_1",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_1::efactor::F_built_environment_order",
+      "from_id": "E_st_1",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_density_intensity",
+      "from_id": "E_st_2",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_commercial_activity",
+      "from_id": "E_st_2",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_residential_quality",
+      "from_id": "E_st_2",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_2",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_green_amenity",
+      "from_id": "E_st_2",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_industrial_activity",
+      "from_id": "E_st_2",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_public_service_presence",
+      "from_id": "E_st_2",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_2::efactor::F_built_environment_order",
+      "from_id": "E_st_2",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_density_intensity",
+      "from_id": "E_st_3",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_commercial_activity",
+      "from_id": "E_st_3",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_residential_quality",
+      "from_id": "E_st_3",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_3",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_green_amenity",
+      "from_id": "E_st_3",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_industrial_activity",
+      "from_id": "E_st_3",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_public_service_presence",
+      "from_id": "E_st_3",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_3::efactor::F_built_environment_order",
+      "from_id": "E_st_3",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_density_intensity",
+      "from_id": "E_st_4",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_commercial_activity",
+      "from_id": "E_st_4",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_residential_quality",
+      "from_id": "E_st_4",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_4",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_green_amenity",
+      "from_id": "E_st_4",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_industrial_activity",
+      "from_id": "E_st_4",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_public_service_presence",
+      "from_id": "E_st_4",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_4::efactor::F_built_environment_order",
+      "from_id": "E_st_4",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_density_intensity",
+      "from_id": "E_st_5",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_commercial_activity",
+      "from_id": "E_st_5",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_residential_quality",
+      "from_id": "E_st_5",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_5",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_green_amenity",
+      "from_id": "E_st_5",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_industrial_activity",
+      "from_id": "E_st_5",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_public_service_presence",
+      "from_id": "E_st_5",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_5::efactor::F_built_environment_order",
+      "from_id": "E_st_5",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_density_intensity",
+      "from_id": "E_st_6",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_commercial_activity",
+      "from_id": "E_st_6",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_residential_quality",
+      "from_id": "E_st_6",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_6",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_green_amenity",
+      "from_id": "E_st_6",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_industrial_activity",
+      "from_id": "E_st_6",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_public_service_presence",
+      "from_id": "E_st_6",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_6::efactor::F_built_environment_order",
+      "from_id": "E_st_6",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_density_intensity",
+      "from_id": "E_st_7",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_commercial_activity",
+      "from_id": "E_st_7",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_residential_quality",
+      "from_id": "E_st_7",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_7",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_green_amenity",
+      "from_id": "E_st_7",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_industrial_activity",
+      "from_id": "E_st_7",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_public_service_presence",
+      "from_id": "E_st_7",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_7::efactor::F_built_environment_order",
+      "from_id": "E_st_7",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_density_intensity",
+      "from_id": "E_st_8",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_commercial_activity",
+      "from_id": "E_st_8",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_residential_quality",
+      "from_id": "E_st_8",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_8",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_green_amenity",
+      "from_id": "E_st_8",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_industrial_activity",
+      "from_id": "E_st_8",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_public_service_presence",
+      "from_id": "E_st_8",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_8::efactor::F_built_environment_order",
+      "from_id": "E_st_8",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_density_intensity",
+      "from_id": "E_st_9",
+      "to_id": "F_density_intensity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_commercial_activity",
+      "from_id": "E_st_9",
+      "to_id": "F_commercial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_residential_quality",
+      "from_id": "E_st_9",
+      "to_id": "F_residential_quality",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_connectivity_accessibility",
+      "from_id": "E_st_9",
+      "to_id": "F_connectivity_accessibility",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_green_amenity",
+      "from_id": "E_st_9",
+      "to_id": "F_green_amenity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_industrial_activity",
+      "from_id": "E_st_9",
+      "to_id": "F_industrial_activity",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_public_service_presence",
+      "from_id": "E_st_9",
+      "to_id": "F_public_service_presence",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "cand::E_st_9::efactor::F_built_environment_order",
+      "from_id": "E_st_9",
+      "to_id": "F_built_environment_order",
+      "relation_type": "evidence_factor",
+      "observed": "True",
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_density_intensity::factor_claim::C_GDP_0",
+      "from_id": "F_density_intensity",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_commercial_activity::factor_claim::C_GDP_0",
+      "from_id": "F_commercial_activity",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_residential_quality::factor_claim::C_GDP_0",
+      "from_id": "F_residential_quality",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_connectivity_accessibility::factor_claim::C_GDP_0",
+      "from_id": "F_connectivity_accessibility",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_green_amenity::factor_claim::C_GDP_0",
+      "from_id": "F_green_amenity",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_industrial_activity::factor_claim::C_GDP_0",
+      "from_id": "F_industrial_activity",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_public_service_presence::factor_claim::C_GDP_0",
+      "from_id": "F_public_service_presence",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    },
+    {
+      "id": "edge::F_built_environment_order::factor_claim::C_GDP_0",
+      "from_id": "F_built_environment_order",
+      "to_id": "C_GDP_0",
+      "relation_type": "factor_claim",
+      "observed": true,
+      "weight": null,
+      "metadata": {}
+    }
+  ],
+  "aggregation": {
+    "satellite": {
+      "positive_score": 0.14,
+      "negative_score": 0.0,
+      "net_score": 0.14,
+      "neutral_count": 0,
+      "evidence_count": 1
+    },
+    "street": {
+      "positive_score": 0.28,
+      "negative_score": 1.52,
+      "net_score": -1.24,
+      "neutral_count": 0,
+      "evidence_count": 10
+    },
+    "balanced": {
+      "net_score": -0.55
+    }
+  },
+  "verification": {
+    "initial": {
+      "task": "GDP",
+      "target_field": "GDP",
+      "status": "PASS",
+      "issues": [],
+      "support_summary": {
+        "support_count": 11,
+        "satellite_support_count": 1,
+        "street_support_count": 10,
+        "positive_support_score": 0.42,
+        "negative_conflict_score": 0.0,
+        "street_positive_count": 2,
+        "street_negative_count": 8,
+        "street_neutral_or_weak_count": 0,
+        "street_positive_score": 0.28,
+        "street_negative_score": 1.52,
+        "street_strong_negative_count": 3,
+        "street_strong_negative_score": 0.7
+      },
+      "addressed_conflict_eids": [],
+      "unused_conflict_eids": []
+    },
+    "final": {
+      "task": "GDP",
+      "target_field": "GDP",
+      "status": "PASS",
+      "issues": [],
+      "support_summary": {
+        "support_count": 11,
+        "satellite_support_count": 1,
+        "street_support_count": 10,
+        "positive_support_score": 0.42,
+        "negative_conflict_score": 0.0,
+        "street_positive_count": 2,
+        "street_negative_count": 8,
+        "street_neutral_or_weak_count": 0,
+        "street_positive_score": 0.28,
+        "street_negative_score": 1.52,
+        "street_strong_negative_count": 3,
+        "street_strong_negative_score": 0.7
+      },
+      "addressed_conflict_eids": [],
+      "unused_conflict_eids": []
+    }
+  },
+  "reasoning_trace": {
+    "all_evidences": [
+      {
+        "eid": "E_sat_0",
+        "modality": "satellite",
+        "observation": "The image shows a densely built-up urban area with a grid-like pattern of buildings. There are patches of greenery and open spaces, as well as visible roads and water bodies. The overall layout suggests a mix of residential and possibly commercial structures, but no clear indicators of major economic hubs or infrastructure are apparent.",
+        "implication": {
+          "GDP": 0.2
+        },
+        "confidence": 0.7,
+        "source": "sample_case\\images\\satellite.png",
+        "spatial_layout": {
+          "density": "high",
+          "building_pattern": "grid-like, repetitive, and uniform",
+          "road_structure": "visible but not highly dense or complex",
+          "land_use": "mixed, with residential areas, open spaces, and some greenery"
+        },
+        "key_elements": [
+          {
+            "type": "built_form",
+            "description": "Dense, uniform residential or mixed-use buildings"
+          },
+          {
+            "type": "land_use",
+            "description": "Presence of open spaces and greenery interspersed with built-up areas"
+          }
+        ],
+        "local_variation": "Minimal variation in building density and pattern, suggesting a consistent urban fabric",
+        "coverage": "The image covers a large, continuous urban area with no significant gaps in development",
+        "semantic_type": "satellite_structured",
+        "scene_type": "built_up_dominant",
+        "informativeness": 0.5
+      },
+      {
+        "eid": "E_st_0",
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of buildings, some of which appear to be commercial establishments. The buildings have bright, colorful facades, and there are signs of activity, such as people walking and some stalls or shops. The street is unpaved, and there is minimal greenery. A few vehicles are visible, indicating some level of mobility. The overall impression is of a modest, possibly low-income area with basic commercial activity.",
+        "implication": {
+          "GDP": -0.3
+        },
+        "confidence": 0.8,
+        "source": "sample_case\\images\\street_0.jpg",
+        "spatial_layout": {
+          "building_condition": "Moderate; buildings show signs of wear but are functional. The bright colors suggest some level of upkeep, though not luxurious.",
+          "street_activity": "Low; there are a few people and some stalls, but overall activity appears limited.",
+          "commercial_presence": "Present; there are visible shops and stalls, indicating some commercial activity, but the scale is small.",
+          "greenery": "Minimal; there are a few scattered trees, but overall greenery is sparse.",
+          "transport_signals": "Basic; a few vehicles are visible, suggesting some level of mobility, but no advanced transport infrastructure is apparent."
+        },
+        "key_elements": [
+          {
+            "type": "Building",
+            "description": "A prominent blue and yellow building with a corrugated metal roof, indicating commercial use and basic construction materials."
+          },
+          {
+            "type": "Street",
+            "description": "Unpaved and dusty, suggesting limited infrastructure investment."
+          },
+          {
+            "type": "Activity",
+            "description": "Low-level activity with a few people and stalls, indicating a modest level of economic activity."
+          }
+        ],
+        "local_variation": "The area shows a mix of commercial and possibly residential uses, with a focus on basic functionality rather than luxury or advanced development.",
+        "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+        "semantic_type": "street_structured",
+        "scene_type": "built_environment_visible",
+        "informativeness": 0.6
+      },
+      {
+        "eid": "E_st_1",
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of residential and commercial structures. The buildings appear to be modest in size and construction, with some showing signs of wear. The street is unpaved and appears to be in a state of disrepair. There is a small commercial structure on the right side, but overall activity and amenities are limited. The surrounding area includes some vegetation and utility poles, but the overall impression is one of a less developed urban environment.",
+        "implication": {
+          "GDP": -0.4
+        },
+        "confidence": 0.7,
+        "source": "sample_case\\images\\street_1.jpg",
+        "spatial_layout": {
+          "building_condition": "moderate wear, simple construction",
+          "street_activity": "low, minimal visible activity",
+          "commercial_presence": "limited, small commercial structure visible",
+          "greenery": "sparse, some trees and vegetation present",
+          "transport_signals": "none visible"
+        },
+        "key_elements": [
+          {
+            "type": "building",
+            "description": "Multi-story residential building with visible wear and simple design"
+          },
+          {
+            "type": "commercial structure",
+            "description": "Small, modest commercial setup on the right side of the street"
+          },
+          {
+            "type": "street condition",
+            "description": "Unpaved, uneven, and in poor condition"
+          }
+        ],
+        "local_variation": "The area shows signs of limited development and maintenance, with a focus on basic residential and small-scale commercial activities.",
+        "coverage": "The image provides a wide-angle view of the street and surrounding buildings, but lacks detailed information on broader urban functionality or amenities.",
+        "semantic_type": "street_structured",
+        "scene_type": "weakly_informative",
+        "informativeness": 0.3
+      },
+      {
+        "eid": "E_st_2",
+        "modality": "street",
+        "observation": "The image depicts a street scene in a low-density urban or peri-urban area. The buildings appear to be simple, with some residential and small commercial structures. The road is unpaved, and there is minimal activity visible. The area has basic infrastructure, such as streetlights and utility poles, but the overall condition suggests limited maintenance and development.",
+        "implication": {
+          "GDP": -0.4
+        },
+        "confidence": 0.8,
+        "source": "sample_case\\images\\street_2.jpg",
+        "spatial_layout": {
+          "building_condition": "moderate, with simple construction and some signs of wear",
+          "street_activity": "low, with a few individuals visible but no significant traffic or commercial activity",
+          "commercial_presence": "minimal, with a small shop visible but no signs of a vibrant commercial district",
+          "greenery": "sparse, with some grass and small plants but no significant landscaping",
+          "transport_signals": "basic, with streetlights present but no visible traffic signals or signage indicating advanced infrastructure"
+        },
+        "key_elements": [
+          {
+            "type": "building",
+            "description": "simple, low-rise structures with basic construction materials"
+          },
+          {
+            "type": "road",
+            "description": "unpaved, suggesting limited infrastructure development"
+          },
+          {
+            "type": "commercial structure",
+            "description": "a small shop with basic signage, indicating limited commercial activity"
+          },
+          {
+            "type": "infrastructure",
+            "description": "basic streetlights and utility poles, but no advanced urban amenities"
+          }
+        ],
+        "local_variation": "The area shows signs of a developing or low-income urban setting with limited commercial and infrastructure development.",
+        "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+        "semantic_type": "street_structured",
+        "scene_type": "built_environment_visible",
+        "informativeness": 0.6
+      },
+      {
+        "eid": "E_st_3",
+        "modality": "street",
+        "observation": "The image shows a rural or semi-urban area with a dirt path, a small structure with a metal gate, and some greenery. There are no visible commercial activities, high-quality infrastructure, or significant urban functionality. The scene appears to be sparsely populated and lacks clear signs of economic vibrancy.",
+        "implication": {
+          "GDP": -0.3
+        },
+        "confidence": 0.6,
+        "source": "sample_case\\images\\street_3.jpg",
+        "spatial_layout": {
+          "building_condition": "moderate",
+          "street_activity": "low",
+          "commercial_presence": "absent",
+          "greenery": "present but sparse",
+          "transport_signals": "absent"
+        },
+        "key_elements": [
+          {
+            "type": "building",
+            "description": "A small, simple structure with a metal gate, suggesting limited infrastructure."
+          },
+          {
+            "type": "path",
+            "description": "A dirt path, indicating low maintenance and limited accessibility."
+          },
+          {
+            "type": "greenery",
+            "description": "Scattered trees and vegetation, but no significant landscaping or urban green spaces."
+          }
+        ],
+        "local_variation": "The area appears rural or semi-urban with minimal development.",
+        "coverage": "The image covers a small, localized area with limited visible context.",
+        "semantic_type": "street_structured",
+        "scene_type": "weakly_informative",
+        "informativeness": 0.2
+      },
+      {
+        "eid": "E_st_4",
+        "modality": "street",
+        "observation": "The image shows a street view with a mix of buildings, including a multi-story structure with red and white facades, and several smaller, unfinished or under-construction buildings. The area appears to be in a developing state, with visible construction materials and incomplete structures. The street is relatively quiet, with no visible activity or traffic. The environment includes some greenery, but it is sparse. There are utility poles and wires, indicating basic infrastructure.",
+        "implication": {
+          "GDP": -0.2
+        },
+        "confidence": 0.6,
+        "source": "sample_case\\images\\street_4.jpg",
+        "spatial_layout": {
+          "building_condition": "Mixed; some buildings appear well-maintained, while others are under construction or unfinished.",
+          "street_activity": "Low; no visible activity or traffic on the street.",
+          "commercial_presence": "Unclear; there are no clear signs of commercial activity or businesses.",
+          "greenery": "Sparse; some greenery is visible but not abundant.",
+          "transport_signals": "Basic; utility poles and wires are present, indicating some infrastructure, but no advanced transport signals are visible."
+        },
+        "key_elements": [
+          {
+            "type": "Building",
+            "description": "A multi-story building with red and white facades, appearing relatively well-maintained."
+          },
+          {
+            "type": "Construction",
+            "description": "Several unfinished or under-construction buildings, indicating development activity."
+          },
+          {
+            "type": "Infrastructure",
+            "description": "Utility poles and wires, suggesting basic infrastructure but no advanced transport signals."
+          }
+        ],
+        "local_variation": "The area shows a mix of developed and developing elements, with some maintained structures and others in the process of construction.",
+        "coverage": "The image provides a partial view of the street and surrounding buildings, but lacks comprehensive details on commercial activity or advanced infrastructure.",
+        "semantic_type": "street_structured",
+        "scene_type": "weakly_informative",
+        "informativeness": 0.3
+      },
+      {
+        "eid": "E_st_5",
+        "modality": "street",
+        "observation": "The image shows a street scene with a mix of residential and commercial buildings. There is a small vendor setup under an umbrella, indicating some commercial activity. The buildings appear to be of modest construction, with some showing signs of wear. The street is relatively quiet, with minimal visible activity or traffic. The area includes a mix of older, possibly low-rise structures and some newer, taller buildings in the background. There is limited greenery visible, and the overall impression is one of a functional but not particularly vibrant urban environment.",
+        "implication": {
+          "GDP": -0.2
+        },
+        "confidence": 0.7,
+        "source": "sample_case\\images\\street_5.jpg",
+        "spatial_layout": {
+          "building_condition": "moderate; some buildings show signs of wear, while others appear newer and better maintained",
+          "street_activity": "low; minimal visible activity, with only a vendor and a few pedestrians",
+          "commercial_presence": "limited; a small vendor setup under an umbrella is the primary commercial presence",
+          "greenery": "sparse; very little greenery is visible in the scene",
+          "transport_signals": "unclear; no clear transport signals or infrastructure are visible"
+        },
+        "key_elements": [
+          {
+            "type": "commercial_activity",
+            "description": "A small vendor setup under an umbrella, indicating some local commerce"
+          },
+          {
+            "type": "building_condition",
+            "description": "A mix of older, modest buildings and some newer structures in the background"
+          },
+          {
+            "type": "street_quality",
+            "description": "The street appears functional but not well-maintained, with a simple paved surface"
+          }
+        ],
+        "local_variation": "The scene shows a mix of older and newer buildings, suggesting some development but not high-density commercial activity.",
+        "coverage": "The image provides a panoramic view of the street, capturing a wide range of buildings and the immediate surroundings.",
+        "semantic_type": "street_structured",
+        "scene_type": "mixed",
+        "informativeness": 0.5
+      },
+      {
+        "eid": "E_st_6",
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of commercial and residential buildings. There are visible signs of activity, such as people walking and a parked motorbike. The buildings show a mix of conditions, with some appearing well-maintained and others showing signs of wear. Commercial signage and storefronts are present, indicating some level of economic activity. The street itself appears to be unpaved, and there is a lack of significant greenery. The overall scene suggests a moderately active but not highly developed urban environment.",
+        "implication": {
+          "GDP": 0.2
+        },
+        "confidence": 0.7,
+        "source": "sample_case\\images\\street_6.jpg",
+        "spatial_layout": {
+          "building_condition": "Mixed; some buildings appear well-maintained, while others show signs of wear.",
+          "street_activity": "Moderate; there are people walking and a parked motorbike, indicating some activity.",
+          "commercial_presence": "Present; there are storefronts and commercial signage, suggesting local businesses.",
+          "greenery": "Minimal; there is little to no visible greenery in the scene.",
+          "transport_signals": "Minimal; no clear traffic signals or road markings are visible."
+        },
+        "key_elements": [
+          {
+            "type": "Building",
+            "description": "A multi-story building with commercial storefronts on the ground floor and residential or office spaces above."
+          },
+          {
+            "type": "Transport",
+            "description": "A parked motorbike, indicating local transportation methods."
+          },
+          {
+            "type": "Commercial Activity",
+            "description": "Visible storefronts and signage, suggesting local businesses and economic activity."
+          },
+          {
+            "type": "Street Condition",
+            "description": "The street appears unpaved, indicating a less developed infrastructure."
+          }
+        ],
+        "local_variation": "The scene shows a mix of commercial and residential uses, with varying building conditions and moderate street activity.",
+        "coverage": "The image provides a panoramic view of the street, capturing a broad range of elements including buildings, street activity, and commercial presence.",
+        "semantic_type": "street_structured",
+        "scene_type": "mixed",
+        "informativeness": 0.6
+      },
+      {
+        "eid": "E_st_7",
+        "modality": "street",
+        "observation": "The image shows a street scene with a mix of residential and possibly commercial buildings. There is a pink building with a black door, a white vehicle parked nearby, and a blue shipping container with text on it. The area appears to have some greenery, including a tree, and a mix of paved and unpaved surfaces. The overall environment suggests a modest urban setting with limited activity and infrastructure.",
+        "implication": {
+          "GDP": -0.2
+        },
+        "confidence": 0.6,
+        "source": "sample_case\\images\\street_7.jpg",
+        "spatial_layout": {
+          "building_condition": "moderate; some buildings appear functional but not high-end, with visible wear on structures like the shipping container and fence.",
+          "street_activity": "low; minimal visible activity, with only one person standing near the pink building.",
+          "commercial_presence": "unclear; the pink building could be commercial, but there are no clear signs of active businesses or services.",
+          "greenery": "moderate; there is a tree and some grass, but overall greenery is not abundant.",
+          "transport_signals": "limited; a white vehicle is parked, but there are no visible traffic signals or infrastructure indicating high mobility."
+        },
+        "key_elements": [
+          {
+            "type": "building",
+            "description": "A pink building with a black door, possibly residential or commercial, showing moderate maintenance."
+          },
+          {
+            "type": "vehicle",
+            "description": "A white vehicle parked near the building, indicating some level of transportation activity."
+          },
+          {
+            "type": "shipping_container",
+            "description": "A blue shipping container with text, suggesting possible storage or commercial use, but not actively engaged in commerce."
+          }
+        ],
+        "local_variation": "The scene shows a mix of structures, including a pink building, a shipping container, and a fence, indicating a potentially mixed-use area with some commercial or storage functions.",
+        "coverage": "The image provides a partial view of the street and surrounding area, but lacks comprehensive details about the broader urban context.",
+        "semantic_type": "street_structured",
+        "scene_type": "weakly_informative",
+        "informativeness": 0.3
+      },
+      {
+        "eid": "E_st_8",
+        "modality": "street",
+        "observation": "The image shows a street view of a semi-urban area with a mix of residential and possibly commercial buildings. The road is unpaved, and there is visible greenery along the sides. The buildings appear to be of moderate quality, with some showing signs of wear. There are utility poles and wires, indicating basic infrastructure. The scene is relatively quiet with no visible traffic or pedestrians.",
+        "implication": {
+          "GDP": -0.2
+        },
+        "confidence": 0.6,
+        "source": "sample_case\\images\\street_8.jpg",
+        "spatial_layout": {
+          "building_condition": "Moderate, with some signs of wear and basic construction materials.",
+          "street_activity": "Low, with no visible traffic or pedestrians.",
+          "commercial_presence": "Unclear, as there are no distinct commercial signs or activity visible.",
+          "greenery": "Present along the sides of the road, indicating some level of landscaping.",
+          "transport_signals": "Minimal, with no visible traffic lights or signage."
+        },
+        "key_elements": [
+          {
+            "type": "Road condition",
+            "description": "The road is unpaved, suggesting limited infrastructure investment."
+          },
+          {
+            "type": "Building condition",
+            "description": "Buildings appear to be of moderate quality, with some signs of wear."
+          },
+          {
+            "type": "Greenery",
+            "description": "Greenery is present along the road, indicating some level of landscaping."
+          }
+        ],
+        "local_variation": "The area appears to be a mix of residential and possibly commercial use, but lacks clear commercial activity or high-quality infrastructure.",
+        "coverage": "The image provides a wide-angle view of the street and surrounding area, but lacks detailed information on commercial activity or high-quality urban features.",
+        "semantic_type": "street_structured",
+        "scene_type": "weakly_informative",
+        "informativeness": 0.3
+      },
+      {
+        "eid": "E_st_9",
+        "modality": "street",
+        "observation": "The image depicts a street scene with a mix of residential and commercial buildings. There is a multi-story building with balconies on the right, and a single-story commercial building on the left. The street appears to have some activity, with a few people visible and vehicles parked along the side. The buildings show signs of wear, and the overall environment suggests a moderately active urban area.",
+        "implication": {
+          "GDP": 0.2
+        },
+        "confidence": 0.7,
+        "source": "sample_case\\images\\street_9.jpg",
+        "spatial_layout": {
+          "building_condition": "Moderate wear, with some visible aging on the buildings but no significant signs of disrepair.",
+          "street_activity": "Low to moderate activity, with a few pedestrians and parked vehicles, indicating some level of daily use.",
+          "commercial_presence": "Present, with visible storefronts and signs, suggesting local commerce.",
+          "greenery": "Minimal, with no significant green spaces or trees visible in the immediate area.",
+          "transport_signals": "Basic, with visible roads and sidewalks, but no advanced traffic infrastructure or signage."
+        },
+        "key_elements": [
+          {
+            "type": "Building",
+            "description": "A multi-story residential building with balconies, indicating a mix of living spaces."
+          },
+          {
+            "type": "Commercial Building",
+            "description": "A single-story building with visible storefronts, suggesting local businesses."
+          },
+          {
+            "type": "Street Activity",
+            "description": "Low to moderate pedestrian and vehicular activity, indicating some level of daily urban life."
+          },
+          {
+            "type": "Infrastructure",
+            "description": "Basic road and sidewalk infrastructure, with no advanced urban amenities visible."
+          }
+        ],
+        "local_variation": "The scene shows a mix of residential and commercial uses, with moderate activity and some signs of wear on the buildings. The presence of storefronts suggests local commerce, but the overall environment does not indicate high urban intensity or advanced infrastructure.",
+        "coverage": "The image provides a partial view of the street and surrounding buildings, capturing a mix of residential and commercial elements but not a comprehensive view of the entire area.",
+        "semantic_type": "street_structured",
+        "scene_type": "mixed",
+        "informativeness": 0.5
+      }
+    ],
+    "initial_claim": {
+      "cid": "C_GDP_0",
+      "task": "GDP",
+      "hypothesis": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average.",
+      "estimate": 4.76864925063221,
+      "confidence": 0.75,
+      "support_eids": [
+        "E_sat_0",
+        "E_st_0",
+        "E_st_1",
+        "E_st_2",
+        "E_st_3",
+        "E_st_4",
+        "E_st_5",
+        "E_st_6",
+        "E_st_7",
+        "E_st_8",
+        "E_st_9"
+      ],
+      "contradict_eids": [],
+      "level": "slightly_low",
+      "level_score": 0.4760467631434536,
+      "scale_type": "normalized",
+      "unit": null
+    },
+    "initial_verification": {
+      "task": "GDP",
+      "target_field": "GDP",
+      "status": "PASS",
+      "issues": [],
+      "support_summary": {
+        "support_count": 11,
+        "satellite_support_count": 1,
+        "street_support_count": 10,
+        "positive_support_score": 0.42,
+        "negative_conflict_score": 0.0,
+        "street_positive_count": 2,
+        "street_negative_count": 8,
+        "street_neutral_or_weak_count": 0,
+        "street_positive_score": 0.28,
+        "street_negative_score": 1.52,
+        "street_strong_negative_count": 3,
+        "street_strong_negative_score": 0.7
+      },
+      "addressed_conflict_eids": [],
+      "unused_conflict_eids": []
+    },
+    "refinement_used": false,
+    "refined_claim": null,
+    "post_refinement_verification": null,
+    "reflection_triggered": false,
+    "reflected_claim": null,
+    "final_verification": {
+      "task": "GDP",
+      "target_field": "GDP",
+      "status": "PASS",
+      "issues": [],
+      "support_summary": {
+        "support_count": 11,
+        "satellite_support_count": 1,
+        "street_support_count": 10,
+        "positive_support_score": 0.42,
+        "negative_conflict_score": 0.0,
+        "street_positive_count": 2,
+        "street_negative_count": 8,
+        "street_neutral_or_weak_count": 0,
+        "street_positive_score": 0.28,
+        "street_negative_score": 1.52,
+        "street_strong_negative_count": 3,
+        "street_strong_negative_score": 0.7
+      },
+      "addressed_conflict_eids": [],
+      "unused_conflict_eids": []
+    }
+  },
+  "goe_trace": {
+    "has_trace": true,
+    "initial_status": "PASS",
+    "final_status": "PASS",
+    "refinement_used": false,
+    "reflection_triggered": false,
+    "num_unused_conflicts_initial": 0,
+    "num_addressed_conflicts_final": 0,
+    "num_issues_initial": 0,
+    "num_issues_final": 0,
+    "support_balance": 0.42,
+    "claim_stability_delta": 0.0,
+    "confidence_delta": 0.0,
+    "initial_positive_support_score": 0.42,
+    "initial_negative_conflict_score": 0.0,
+    "final_support_count": 11,
+    "final_satellite_support_count": 1,
+    "final_street_support_count": 10
+  },
+  "factors": [
+    {
+      "id": "F_density_intensity",
+      "factor_name": "density_intensity",
+      "description": "Signals related to dense building layout, concentrated urban occupancy, and strong built-up intensity.",
+      "task_relevance": {
+        "GDP": 0.45
+      }
+    },
+    {
+      "id": "F_commercial_activity",
+      "factor_name": "commercial_activity",
+      "description": "Signals related to shops, mixed-use activity, business presence, and visible urban commerce.",
+      "task_relevance": {
+        "GDP": 0.9
+      }
+    },
+    {
+      "id": "F_residential_quality",
+      "factor_name": "residential_quality",
+      "description": "Signals related to housing maintenance, orderly residential streets, and perceived neighborhood quality.",
+      "task_relevance": {
+        "GDP": 0.25
+      }
+    },
+    {
+      "id": "F_connectivity_accessibility",
+      "factor_name": "connectivity_accessibility",
+      "description": "Signals related to road network density, transport access, and physical connectivity.",
+      "task_relevance": {
+        "GDP": 0.6
+      }
+    },
+    {
+      "id": "F_green_amenity",
+      "factor_name": "green_amenity",
+      "description": "Signals related to greenery, trees, parks, and environmental amenity.",
+      "task_relevance": {
+        "GDP": 0.1
+      }
+    },
+    {
+      "id": "F_industrial_activity",
+      "factor_name": "industrial_activity",
+      "description": "Signals related to warehouses, industrial roofs, heavy infrastructure, and possible industrial land use.",
+      "task_relevance": {
+        "GDP": 0.35
+      }
+    },
+    {
+      "id": "F_public_service_presence",
+      "factor_name": "public_service_presence",
+      "description": "Signals related to schools, parks, civic facilities, and public services.",
+      "task_relevance": {
+        "GDP": 0.2
+      }
+    },
+    {
+      "id": "F_built_environment_order",
+      "factor_name": "built_environment_order",
+      "description": "Signals related to cleanliness, organization, paved roads, coherent layout, and maintenance.",
+      "task_relevance": {
+        "GDP": 0.2
+      }
+    }
+  ],
+  "edge_potentials": {
+    "method": "hierarchical_training_free_edge_potential_v3",
+    "target_field": "GDP",
+    "potentials": [
+      {
+        "edge_id": "edge::E_sat_0::support::C_GDP_0",
+        "support_strength": 0.14,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.311,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.7,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_0::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.24,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.3,
+        "potential_score": -0.012,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.8,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_1::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.28,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.4,
+        "potential_score": -0.046,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.7,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_2::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.32,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.4,
+        "potential_score": -0.08,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.8,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_3::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.18,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.3,
+        "potential_score": 0.039,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.6,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_4::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.12,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.2,
+        "potential_score": 0.09,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.6,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_5::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.14,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.2,
+        "potential_score": 0.073,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.7,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_6::support::C_GDP_0",
+        "support_strength": 0.14,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.311,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.7,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_7::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.12,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.2,
+        "potential_score": 0.09,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.6,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_8::support::C_GDP_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.12,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": -0.2,
+        "potential_score": 0.09,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.6,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "edge::E_st_9::support::C_GDP_0",
+        "support_strength": 0.14,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.311,
+        "rationale": {
+          "edge_family": "evidence_claim",
+          "evidence_confidence": 0.7,
+          "observed_relation_type": "support"
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_0",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2099,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2099,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2436,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_1",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.1879,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.1879,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2073,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_2",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.212,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.212,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2676,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_3",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2277,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2277,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2879,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_4",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.215,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.215,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2375,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2212,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2212,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.253,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2512,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2512,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.253,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2213,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2213,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2533,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2327,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2327,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2817,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.2389,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.2389,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2222,
+          "same_modality": 0.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_1",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5393,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5393,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3671,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_2",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5502,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5502,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3944,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_3",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5013,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5013,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2533,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_4",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5068,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5068,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2857,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5505,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5505,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3951,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5347,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5347,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4304,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.514,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.514,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3038,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5404,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5404,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3699,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_0::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.509,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.509,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3662,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_2",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5611,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5611,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4028,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_3",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4912,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4912,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2468,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_4",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5216,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5216,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3415,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5747,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5747,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4744,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.516,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.516,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4024,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5166,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5166,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3291,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5218,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5218,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3421,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_1::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5127,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5127,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3944,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_3",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4896,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4896,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2429,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_4",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5029,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5029,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2949,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5286,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5286,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.359,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4917,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4917,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3418,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5039,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5039,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2973,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5321,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5321,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3676,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.9
+        }
+      },
+      {
+        "edge_id": "cand::E_st_2::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4767,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4767,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3043,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.7
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_4",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4978,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4978,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2632,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4913,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4913,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2469,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4675,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4675,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2625,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4844,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4844,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2297,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5258,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5258,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3333,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.95
+        }
+      },
+      {
+        "edge_id": "cand::E_st_3::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4553,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4553,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2319,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.75
+        }
+      },
+      {
+        "edge_id": "cand::E_st_4::redundant::E_st_5",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5412,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5412,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3529,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_4::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4755,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4755,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2637,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_4::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5122,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5122,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2805,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_4::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5746,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5746,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4366,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_4::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.465,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.465,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2375,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_5::redundant::E_st_6",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5155,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5155,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3636,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_5::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5238,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5238,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3095,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_5::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5632,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5632,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4079,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_5::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.49,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.49,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::redundant::E_st_7",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4938,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4938,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3095,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.4984,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.4984,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.321,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5778,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5778,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.4444,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_7::redundant::E_st_8",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5173,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5173,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.2933,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 1.0
+        }
+      },
+      {
+        "edge_id": "cand::E_st_7::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.5312,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.5312,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.403,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "cand::E_st_8::redundant::E_st_9",
+        "support_strength": 0.0,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.49,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.0,
+        "potential_score": -0.49,
+        "rationale": {
+          "edge_family": "redundancy",
+          "lexical_jaccard": 0.3,
+          "same_modality": 1.0,
+          "same_source": 0.0,
+          "implication_similarity": 0.8
+        }
+      },
+      {
+        "edge_id": "edge::F_density_intensity::factor_claim::C_GDP_0",
+        "support_strength": 0.315,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.315,
+        "potential_score": 0.315,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "density_intensity"
+        }
+      },
+      {
+        "edge_id": "edge::F_commercial_activity::factor_claim::C_GDP_0",
+        "support_strength": 0.63,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.63,
+        "potential_score": 0.63,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "commercial_activity"
+        }
+      },
+      {
+        "edge_id": "edge::F_residential_quality::factor_claim::C_GDP_0",
+        "support_strength": 0.175,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.175,
+        "potential_score": 0.175,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "residential_quality"
+        }
+      },
+      {
+        "edge_id": "edge::F_connectivity_accessibility::factor_claim::C_GDP_0",
+        "support_strength": 0.42,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.42,
+        "potential_score": 0.42,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "connectivity_accessibility"
+        }
+      },
+      {
+        "edge_id": "edge::F_green_amenity::factor_claim::C_GDP_0",
+        "support_strength": 0.07,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.07,
+        "potential_score": 0.07,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "green_amenity"
+        }
+      },
+      {
+        "edge_id": "edge::F_industrial_activity::factor_claim::C_GDP_0",
+        "support_strength": 0.245,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.245,
+        "potential_score": 0.245,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "industrial_activity"
+        }
+      },
+      {
+        "edge_id": "edge::F_public_service_presence::factor_claim::C_GDP_0",
+        "support_strength": 0.14,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.14,
+        "potential_score": 0.14,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "public_service_presence"
+        }
+      },
+      {
+        "edge_id": "edge::F_built_environment_order::factor_claim::C_GDP_0",
+        "support_strength": 0.14,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.0,
+        "implication_alignment": 0.14,
+        "potential_score": 0.14,
+        "rationale": {
+          "edge_family": "factor_claim",
+          "factor_name": "built_environment_order"
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::efactor::F_density_intensity",
+        "support_strength": 0.1683,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1683,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0909,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0938,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::efactor::F_commercial_activity",
+        "support_strength": 0.1463,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1463,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0889,
+          "modality_prior": 0.45,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0909,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_sat_0::efactor::F_connectivity_accessibility",
+        "support_strength": 0.1452,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1452,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0444,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0303,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::efactor::F_commercial_activity",
+        "support_strength": 0.1553,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1553,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0656,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0571,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::efactor::F_residential_quality",
+        "support_strength": 0.1426,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1426,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0333,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.029,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_6::efactor::F_green_amenity",
+        "support_strength": 0.1422,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1422,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0323,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0282,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_9::efactor::F_commercial_activity",
+        "support_strength": 0.1597,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1597,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0889,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0548,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_9::efactor::F_green_amenity",
+        "support_strength": 0.1473,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1473,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0435,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0411,
+          "coverage_weight": 0.55
+        }
+      },
+      {
+        "edge_id": "cand::E_st_9::efactor::F_residential_quality",
+        "support_strength": 0.1449,
+        "conflict_strength": 0.0,
+        "redundancy_strength": 0.0,
+        "source_reliability": 0.6,
+        "implication_alignment": 0.2,
+        "potential_score": 0.1449,
+        "rationale": {
+          "edge_family": "evidence_factor",
+          "text_match": 0.0455,
+          "modality_prior": 0.65,
+          "evidence_confidence": 0.7,
+          "structured_match": 0.0278,
+          "coverage_weight": 0.55
+        }
+      }
+    ]
+  },
+  "solver_result": {
+    "method": "hierarchical_verification_aware_solver_v3",
+    "target_field": "GDP",
+    "normalized_range": [
+      0.0,
+      9.9
+    ],
+    "trace_features_used": {
+      "has_trace": true,
+      "initial_status": "PASS",
+      "final_status": "PASS",
+      "refinement_used": false,
+      "reflection_triggered": false,
+      "num_unused_conflicts_initial": 0,
+      "num_addressed_conflicts_final": 0,
+      "num_issues_initial": 0,
+      "num_issues_final": 0,
+      "support_balance": 0.42,
+      "claim_stability_delta": 0.0,
+      "confidence_delta": 0.0,
+      "initial_positive_support_score": 0.42,
+      "initial_negative_conflict_score": 0.0,
+      "final_support_count": 11,
+      "final_satellite_support_count": 1,
+      "final_street_support_count": 10,
+      "target_field": "GDP"
+    },
+    "calibrated_evidences": {
+      "E_sat_0": {
+        "evidence_id": "E_sat_0",
+        "original_confidence": 0.7,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.1109,
+        "calibrated_confidence": 0.5041,
+        "modality": "satellite",
+        "observation": "The image shows a densely built-up urban area with a grid-like pattern of buildings. There are patches of greenery and open spaces, as well as visible roads and water bodies. The overall layout suggests a mix of residential and possibly commercial structures, but no clear indicators of major economic hubs or infrastructure are apparent."
+      },
+      "E_st_0": {
+        "evidence_id": "E_st_0",
+        "original_confidence": 0.8,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2478,
+        "calibrated_confidence": 0.4422,
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of buildings, some of which appear to be commercial establishments. The buildings have bright, colorful facades, and there are signs of activity, such as people walking and some stalls or shops. The street is unpaved, and there is minimal greenery. A few vehicles are visible, indicating some level of mobility. The overall impression is of a modest, possibly low-income area with basic commercial activity."
+      },
+      "E_st_1": {
+        "evidence_id": "E_st_1",
+        "original_confidence": 0.7,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2471,
+        "calibrated_confidence": 0.3679,
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of residential and commercial structures. The buildings appear to be modest in size and construction, with some showing signs of wear. The street is unpaved and appears to be in a state of disrepair. There is a small commercial structure on the right side, but overall activity and amenities are limited. The surrounding area includes some vegetation and utility poles, but the overall impression is one of a less developed urban environment."
+      },
+      "E_st_2": {
+        "evidence_id": "E_st_2",
+        "original_confidence": 0.8,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2424,
+        "calibrated_confidence": 0.4476,
+        "modality": "street",
+        "observation": "The image depicts a street scene in a low-density urban or peri-urban area. The buildings appear to be simple, with some residential and small commercial structures. The road is unpaved, and there is minimal activity visible. The area has basic infrastructure, such as streetlights and utility poles, but the overall condition suggests limited maintenance and development."
+      },
+      "E_st_3": {
+        "evidence_id": "E_st_3",
+        "original_confidence": 0.6,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2316,
+        "calibrated_confidence": 0.3084,
+        "modality": "street",
+        "observation": "The image shows a rural or semi-urban area with a dirt path, a small structure with a metal gate, and some greenery. There are no visible commercial activities, high-quality infrastructure, or significant urban functionality. The scene appears to be sparsely populated and lacks clear signs of economic vibrancy."
+      },
+      "E_st_4": {
+        "evidence_id": "E_st_4",
+        "original_confidence": 0.6,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2406,
+        "calibrated_confidence": 0.2994,
+        "modality": "street",
+        "observation": "The image shows a street view with a mix of buildings, including a multi-story structure with red and white facades, and several smaller, unfinished or under-construction buildings. The area appears to be in a developing state, with visible construction materials and incomplete structures. The street is relatively quiet, with no visible activity or traffic. The environment includes some greenery, but it is sparse. There are utility poles and wires, indicating basic infrastructure."
+      },
+      "E_st_5": {
+        "evidence_id": "E_st_5",
+        "original_confidence": 0.7,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.25,
+        "calibrated_confidence": 0.365,
+        "modality": "street",
+        "observation": "The image shows a street scene with a mix of residential and commercial buildings. There is a small vendor setup under an umbrella, indicating some commercial activity. The buildings appear to be of modest construction, with some showing signs of wear. The street is relatively quiet, with minimal visible activity or traffic. The area includes a mix of older, possibly low-rise structures and some newer, taller buildings in the background. There is limited greenery visible, and the overall impression is one of a functional but not particularly vibrant urban environment."
+      },
+      "E_st_6": {
+        "evidence_id": "E_st_6",
+        "original_confidence": 0.7,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2411,
+        "calibrated_confidence": 0.3739,
+        "modality": "street",
+        "observation": "The image depicts a street scene in an urban area with a mix of commercial and residential buildings. There are visible signs of activity, such as people walking and a parked motorbike. The buildings show a mix of conditions, with some appearing well-maintained and others showing signs of wear. Commercial signage and storefronts are present, indicating some level of economic activity. The street itself appears to be unpaved, and there is a lack of significant greenery. The overall scene suggests a moderately active but not highly developed urban environment."
+      },
+      "E_st_7": {
+        "evidence_id": "E_st_7",
+        "original_confidence": 0.6,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2409,
+        "calibrated_confidence": 0.2991,
+        "modality": "street",
+        "observation": "The image shows a street scene with a mix of residential and possibly commercial buildings. There is a pink building with a black door, a white vehicle parked nearby, and a blue shipping container with text on it. The area appears to have some greenery, including a tree, and a mix of paved and unpaved surfaces. The overall environment suggests a modest urban setting with limited activity and infrastructure."
+      },
+      "E_st_8": {
+        "evidence_id": "E_st_8",
+        "original_confidence": 0.6,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2498,
+        "calibrated_confidence": 0.2902,
+        "modality": "street",
+        "observation": "The image shows a street view of a semi-urban area with a mix of residential and possibly commercial buildings. The road is unpaved, and there is visible greenery along the sides. The buildings appear to be of moderate quality, with some showing signs of wear. There are utility poles and wires, indicating basic infrastructure. The scene is relatively quiet with no visible traffic or pedestrians."
+      },
+      "E_st_9": {
+        "evidence_id": "E_st_9",
+        "original_confidence": 0.7,
+        "source_reliability": 0.6,
+        "redundancy_penalty": 0.2373,
+        "calibrated_confidence": 0.3777,
+        "modality": "street",
+        "observation": "The image depicts a street scene with a mix of residential and commercial buildings. There is a multi-story building with balconies on the right, and a single-story commercial building on the left. The street appears to have some activity, with a few people visible and vehicles parked along the side. The buildings show signs of wear, and the overall environment suggests a moderately active urban area."
+      }
+    },
+    "factor_scores": [
+      {
+        "factor_id": "F_density_intensity",
+        "factor_name": "density_intensity",
+        "score": 0.0782,
+        "top_evidence": [
+          "E_sat_0"
+        ],
+        "evidence_links": [
+          {
+            "evidence_id": "E_sat_0",
+            "contribution": 0.0848,
+            "support_strength": 0.1683,
+            "evidence_confidence": 0.5041
+          }
+        ]
+      },
+      {
+        "factor_id": "F_commercial_activity",
+        "factor_name": "commercial_activity",
+        "score": 0.1612,
+        "top_evidence": [
+          "E_sat_0",
+          "E_st_9",
+          "E_st_6"
+        ],
+        "evidence_links": [
+          {
+            "evidence_id": "E_sat_0",
+            "contribution": 0.0737,
+            "support_strength": 0.1463,
+            "evidence_confidence": 0.5041
+          },
+          {
+            "evidence_id": "E_st_9",
+            "contribution": 0.0603,
+            "support_strength": 0.1597,
+            "evidence_confidence": 0.3777
+          },
+          {
+            "evidence_id": "E_st_6",
+            "contribution": 0.0581,
+            "support_strength": 0.1553,
+            "evidence_confidence": 0.3739
+          }
+        ]
+      },
+      {
+        "factor_id": "F_residential_quality",
+        "factor_name": "residential_quality",
+        "score": 0.0975,
+        "top_evidence": [
+          "E_st_9",
+          "E_st_6"
+        ],
+        "evidence_links": [
+          {
+            "evidence_id": "E_st_9",
+            "contribution": 0.0547,
+            "support_strength": 0.1449,
+            "evidence_confidence": 0.3777
+          },
+          {
+            "evidence_id": "E_st_6",
+            "contribution": 0.0533,
+            "support_strength": 0.1426,
+            "evidence_confidence": 0.3739
+          }
+        ]
+      },
+      {
+        "factor_id": "F_connectivity_accessibility",
+        "factor_name": "connectivity_accessibility",
+        "score": 0.0682,
+        "top_evidence": [
+          "E_sat_0"
+        ],
+        "evidence_links": [
+          {
+            "evidence_id": "E_sat_0",
+            "contribution": 0.0732,
+            "support_strength": 0.1452,
+            "evidence_confidence": 0.5041
+          }
+        ]
+      },
+      {
+        "factor_id": "F_green_amenity",
+        "factor_name": "green_amenity",
+        "score": 0.0981,
+        "top_evidence": [
+          "E_st_9",
+          "E_st_6"
+        ],
+        "evidence_links": [
+          {
+            "evidence_id": "E_st_9",
+            "contribution": 0.0556,
+            "support_strength": 0.1473,
+            "evidence_confidence": 0.3777
+          },
+          {
+            "evidence_id": "E_st_6",
+            "contribution": 0.0532,
+            "support_strength": 0.1422,
+            "evidence_confidence": 0.3739
+          }
+        ]
+      },
+      {
+        "factor_id": "F_industrial_activity",
+        "factor_name": "industrial_activity",
+        "score": 0.0,
+        "top_evidence": [],
+        "evidence_links": []
+      },
+      {
+        "factor_id": "F_public_service_presence",
+        "factor_name": "public_service_presence",
+        "score": 0.0,
+        "top_evidence": [],
+        "evidence_links": []
+      },
+      {
+        "factor_id": "F_built_environment_order",
+        "factor_name": "built_environment_order",
+        "score": 0.0,
+        "top_evidence": [],
+        "evidence_links": []
+      }
+    ],
+    "solved_claims": [
+      {
+        "claim_id": "C_GDP_0",
+        "task": "GDP",
+        "hypothesis": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average.",
+        "original_estimate": 4.76864925063221,
+        "original_confidence": 0.75,
+        "prior_score": 0.4971,
+        "bucket_anchor": 0.4817,
+        "evidence_anchor": 0.5586,
+        "direct_evidence_score": -0.3951,
+        "factor_graph_score": 0.0,
+        "raw_factor_graph_score": 0.0,
+        "factor_gate": 0.25,
+        "graph_score": 0.4119,
+        "routing_weights": {
+          "g_prior": 0.8,
+          "g_direct": 0.3431,
+          "g_factor": 0.3689,
+          "w_prior": 0.5291,
+          "w_direct": 0.2269,
+          "w_factor": 0.244,
+          "num_active_factors": 0,
+          "num_direct_support": 3
+        },
+        "verification_bonus": 0.015,
+        "uncertainty_penalty": 0.0,
+        "disagreement_penalty": 0.0,
+        "low_value_bonus": 0.0,
+        "solved_claim_score": 0.4307,
+        "solved_estimate": 4.2642,
+        "solved_confidence": 0.6375,
+        "top_supporting_evidence": [
+          "E_sat_0",
+          "E_st_9",
+          "E_st_6"
+        ],
+        "top_conflicting_evidence": [
+          "E_st_2",
+          "E_st_0",
+          "E_st_1",
+          "E_st_5",
+          "E_st_3"
+        ],
+        "top_factors": [
+          "density_intensity",
+          "commercial_activity",
+          "residential_quality",
+          "connectivity_accessibility",
+          "green_amenity"
+        ],
+        "direct_contributions": [
+          {
+            "edge_id": "edge::E_sat_0::support::C_GDP_0",
+            "evidence_id": "E_sat_0",
+            "support_strength": 0.14,
+            "conflict_strength": 0.0,
+            "evidence_confidence": 0.5041,
+            "net_contribution": 0.0706
+          },
+          {
+            "edge_id": "edge::E_st_0::support::C_GDP_0",
+            "evidence_id": "E_st_0",
+            "support_strength": 0.0,
+            "conflict_strength": 0.24,
+            "evidence_confidence": 0.4422,
+            "net_contribution": -0.1539
+          },
+          {
+            "edge_id": "edge::E_st_1::support::C_GDP_0",
+            "evidence_id": "E_st_1",
+            "support_strength": 0.0,
+            "conflict_strength": 0.28,
+            "evidence_confidence": 0.3679,
+            "net_contribution": -0.1344
+          },
+          {
+            "edge_id": "edge::E_st_2::support::C_GDP_0",
+            "evidence_id": "E_st_2",
+            "support_strength": 0.0,
+            "conflict_strength": 0.32,
+            "evidence_confidence": 0.4476,
+            "net_contribution": -0.2077
+          },
+          {
+            "edge_id": "edge::E_st_3::support::C_GDP_0",
+            "evidence_id": "E_st_3",
+            "support_strength": 0.0,
+            "conflict_strength": 0.18,
+            "evidence_confidence": 0.3084,
+            "net_contribution": -0.0724
+          },
+          {
+            "edge_id": "edge::E_st_4::support::C_GDP_0",
+            "evidence_id": "E_st_4",
+            "support_strength": 0.0,
+            "conflict_strength": 0.12,
+            "evidence_confidence": 0.2994,
+            "net_contribution": -0.0469
+          },
+          {
+            "edge_id": "edge::E_st_5::support::C_GDP_0",
+            "evidence_id": "E_st_5",
+            "support_strength": 0.0,
+            "conflict_strength": 0.14,
+            "evidence_confidence": 0.365,
+            "net_contribution": -0.0741
+          },
+          {
+            "edge_id": "edge::E_st_6::support::C_GDP_0",
+            "evidence_id": "E_st_6",
+            "support_strength": 0.14,
+            "conflict_strength": 0.0,
+            "evidence_confidence": 0.3739,
+            "net_contribution": 0.0288
+          },
+          {
+            "edge_id": "edge::E_st_7::support::C_GDP_0",
+            "evidence_id": "E_st_7",
+            "support_strength": 0.0,
+            "conflict_strength": 0.12,
+            "evidence_confidence": 0.2991,
+            "net_contribution": -0.0468
+          },
+          {
+            "edge_id": "edge::E_st_8::support::C_GDP_0",
+            "evidence_id": "E_st_8",
+            "support_strength": 0.0,
+            "conflict_strength": 0.12,
+            "evidence_confidence": 0.2902,
+            "net_contribution": -0.0454
+          },
+          {
+            "edge_id": "edge::E_st_9::support::C_GDP_0",
+            "evidence_id": "E_st_9",
+            "support_strength": 0.14,
+            "conflict_strength": 0.0,
+            "evidence_confidence": 0.3777,
+            "net_contribution": 0.0291
+          }
+        ],
+        "factor_contributions": [
+          {
+            "edge_id": "edge::F_density_intensity::factor_claim::C_GDP_0",
+            "factor_id": "F_density_intensity",
+            "factor_name": "density_intensity",
+            "factor_score": 0.0782,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.315,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_commercial_activity::factor_claim::C_GDP_0",
+            "factor_id": "F_commercial_activity",
+            "factor_name": "commercial_activity",
+            "factor_score": 0.1612,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.63,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_residential_quality::factor_claim::C_GDP_0",
+            "factor_id": "F_residential_quality",
+            "factor_name": "residential_quality",
+            "factor_score": 0.0975,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.175,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_connectivity_accessibility::factor_claim::C_GDP_0",
+            "factor_id": "F_connectivity_accessibility",
+            "factor_name": "connectivity_accessibility",
+            "factor_score": 0.0682,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.42,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_green_amenity::factor_claim::C_GDP_0",
+            "factor_id": "F_green_amenity",
+            "factor_name": "green_amenity",
+            "factor_score": 0.0981,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.07,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_industrial_activity::factor_claim::C_GDP_0",
+            "factor_id": "F_industrial_activity",
+            "factor_name": "industrial_activity",
+            "factor_score": 0.0,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.245,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_public_service_presence::factor_claim::C_GDP_0",
+            "factor_id": "F_public_service_presence",
+            "factor_name": "public_service_presence",
+            "factor_score": 0.0,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.14,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          },
+          {
+            "edge_id": "edge::F_built_environment_order::factor_claim::C_GDP_0",
+            "factor_id": "F_built_environment_order",
+            "factor_name": "built_environment_order",
+            "factor_score": 0.0,
+            "effective_factor_score": 0.0,
+            "support_strength": 0.14,
+            "conflict_strength": 0.0,
+            "net_contribution": 0.0
+          }
+        ]
+      }
+    ],
+    "config": {
+      "factor_prior_scale": 0.7,
+      "redundancy_penalty_scale": 0.05,
+      "verification_bonus_scale": 0.5,
+      "estimate_temperature": 1.1
+    }
+  }
+}

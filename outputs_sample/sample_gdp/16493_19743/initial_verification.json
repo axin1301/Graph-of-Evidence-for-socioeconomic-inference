@@ -1,0 +1,22 @@
+{
+  "task": "GDP",
+  "target_field": "GDP",
+  "status": "PASS",
+  "issues": [],
+  "support_summary": {
+    "support_count": 11,
+    "satellite_support_count": 1,
+    "street_support_count": 10,
+    "positive_support_score": 0.42,
+    "negative_conflict_score": 0.0,
+    "street_positive_count": 2,
+    "street_negative_count": 8,
+    "street_neutral_or_weak_count": 0,
+    "street_positive_score": 0.28,
+    "street_negative_score": 1.52,
+    "street_strong_negative_count": 3,
+    "street_strong_negative_score": 0.7
+  },
+  "addressed_conflict_eids": [],
+  "unused_conflict_eids": []
+}

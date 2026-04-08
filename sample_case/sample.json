@@ -1,0 +1,19 @@
+{
+  "task_name": "sample_gdp",
+  "case_id": "16493_19743",
+  "query": "Estimate the GDP level of this urban area on a normalized scale from 0.0 to 9.9.",
+  "sat_image": "images/satellite.png",
+  "street_images": [
+    "images/street_0.jpg",
+    "images/street_1.jpg",
+    "images/street_2.jpg",
+    "images/street_3.jpg",
+    "images/street_4.jpg",
+    "images/street_5.jpg",
+    "images/street_6.jpg",
+    "images/street_7.jpg",
+    "images/street_8.jpg",
+    "images/street_9.jpg"
+  ],
+  "output_dir": "outputs_sample"
+}

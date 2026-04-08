@@ -1,0 +1,9 @@
+{
+  "task_name": "GDP",
+  "target_field": "GDP",
+  "unit": null,
+  "normalized_range": [
+    0.0,
+    9.9
+  ]
+}

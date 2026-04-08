@@ -1,0 +1,33 @@
+[
+  {
+    "eid": "E_sat_0",
+    "modality": "satellite",
+    "observation": "The image shows a densely built-up urban area with a grid-like pattern of buildings. There are patches of greenery and open spaces, as well as visible roads and water bodies. The overall layout suggests a mix of residential and possibly commercial structures, but no clear indicators of major economic hubs or infrastructure are apparent.",
+    "implication": {
+      "GDP": 0.2
+    },
+    "confidence": 0.7,
+    "source": "sample_case\\images\\satellite.png",
+    "spatial_layout": {
+      "density": "high",
+      "building_pattern": "grid-like, repetitive, and uniform",
+      "road_structure": "visible but not highly dense or complex",
+      "land_use": "mixed, with residential areas, open spaces, and some greenery"
+    },
+    "key_elements": [
+      {
+        "type": "built_form",
+        "description": "Dense, uniform residential or mixed-use buildings"
+      },
+      {
+        "type": "land_use",
+        "description": "Presence of open spaces and greenery interspersed with built-up areas"
+      }
+    ],
+    "local_variation": "Minimal variation in building density and pattern, suggesting a consistent urban fabric",
+    "coverage": "The image covers a large, continuous urban area with no significant gaps in development",
+    "semantic_type": "satellite_structured",
+    "scene_type": "built_up_dominant",
+    "informativeness": 0.5
+  }
+]

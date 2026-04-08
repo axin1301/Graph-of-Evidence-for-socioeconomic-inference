@@ -1,0 +1,374 @@
+[
+  {
+    "eid": "E_st_0",
+    "modality": "street",
+    "observation": "The image depicts a street scene in an urban area with a mix of buildings, some of which appear to be commercial establishments. The buildings have bright, colorful facades, and there are signs of activity, such as people walking and some stalls or shops. The street is unpaved, and there is minimal greenery. A few vehicles are visible, indicating some level of mobility. The overall impression is of a modest, possibly low-income area with basic commercial activity.",
+    "implication": {
+      "GDP": -0.3
+    },
+    "confidence": 0.8,
+    "source": "sample_case\\images\\street_0.jpg",
+    "spatial_layout": {
+      "building_condition": "Moderate; buildings show signs of wear but are functional. The bright colors suggest some level of upkeep, though not luxurious.",
+      "street_activity": "Low; there are a few people and some stalls, but overall activity appears limited.",
+      "commercial_presence": "Present; there are visible shops and stalls, indicating some commercial activity, but the scale is small.",
+      "greenery": "Minimal; there are a few scattered trees, but overall greenery is sparse.",
+      "transport_signals": "Basic; a few vehicles are visible, suggesting some level of mobility, but no advanced transport infrastructure is apparent."
+    },
+    "key_elements": [
+      {
+        "type": "Building",
+        "description": "A prominent blue and yellow building with a corrugated metal roof, indicating commercial use and basic construction materials."
+      },
+      {
+        "type": "Street",
+        "description": "Unpaved and dusty, suggesting limited infrastructure investment."
+      },
+      {
+        "type": "Activity",
+        "description": "Low-level activity with a few people and stalls, indicating a modest level of economic activity."
+      }
+    ],
+    "local_variation": "The area shows a mix of commercial and possibly residential uses, with a focus on basic functionality rather than luxury or advanced development.",
+    "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+    "semantic_type": "street_structured",
+    "scene_type": "built_environment_visible",
+    "informativeness": 0.6
+  },
+  {
+    "eid": "E_st_1",
+    "modality": "street",
+    "observation": "The image depicts a street scene in an urban area with a mix of residential and commercial structures. The buildings appear to be modest in size and construction, with some showing signs of wear. The street is unpaved and appears to be in a state of disrepair. There is a small commercial structure on the right side, but overall activity and amenities are limited. The surrounding area includes some vegetation and utility poles, but the overall impression is one of a less developed urban environment.",
+    "implication": {
+      "GDP": -0.4
+    },
+    "confidence": 0.7,
+    "source": "sample_case\\images\\street_1.jpg",
+    "spatial_layout": {
+      "building_condition": "moderate wear, simple construction",
+      "street_activity": "low, minimal visible activity",
+      "commercial_presence": "limited, small commercial structure visible",
+      "greenery": "sparse, some trees and vegetation present",
+      "transport_signals": "none visible"
+    },
+    "key_elements": [
+      {
+        "type": "building",
+        "description": "Multi-story residential building with visible wear and simple design"
+      },
+      {
+        "type": "commercial structure",
+        "description": "Small, modest commercial setup on the right side of the street"
+      },
+      {
+        "type": "street condition",
+        "description": "Unpaved, uneven, and in poor condition"
+      }
+    ],
+    "local_variation": "The area shows signs of limited development and maintenance, with a focus on basic residential and small-scale commercial activities.",
+    "coverage": "The image provides a wide-angle view of the street and surrounding buildings, but lacks detailed information on broader urban functionality or amenities.",
+    "semantic_type": "street_structured",
+    "scene_type": "weakly_informative",
+    "informativeness": 0.3
+  },
+  {
+    "eid": "E_st_2",
+    "modality": "street",
+    "observation": "The image depicts a street scene in a low-density urban or peri-urban area. The buildings appear to be simple, with some residential and small commercial structures. The road is unpaved, and there is minimal activity visible. The area has basic infrastructure, such as streetlights and utility poles, but the overall condition suggests limited maintenance and development.",
+    "implication": {
+      "GDP": -0.4
+    },
+    "confidence": 0.8,
+    "source": "sample_case\\images\\street_2.jpg",
+    "spatial_layout": {
+      "building_condition": "moderate, with simple construction and some signs of wear",
+      "street_activity": "low, with a few individuals visible but no significant traffic or commercial activity",
+      "commercial_presence": "minimal, with a small shop visible but no signs of a vibrant commercial district",
+      "greenery": "sparse, with some grass and small plants but no significant landscaping",
+      "transport_signals": "basic, with streetlights present but no visible traffic signals or signage indicating advanced infrastructure"
+    },
+    "key_elements": [
+      {
+        "type": "building",
+        "description": "simple, low-rise structures with basic construction materials"
+      },
+      {
+        "type": "road",
+        "description": "unpaved, suggesting limited infrastructure development"
+      },
+      {
+        "type": "commercial structure",
+        "description": "a small shop with basic signage, indicating limited commercial activity"
+      },
+      {
+        "type": "infrastructure",
+        "description": "basic streetlights and utility poles, but no advanced urban amenities"
+      }
+    ],
+    "local_variation": "The area shows signs of a developing or low-income urban setting with limited commercial and infrastructure development.",
+    "coverage": "The image provides a wide-angle view of the street and surrounding buildings, offering a comprehensive look at the local environment.",
+    "semantic_type": "street_structured",
+    "scene_type": "built_environment_visible",
+    "informativeness": 0.6
+  },
+  {
+    "eid": "E_st_3",
+    "modality": "street",
+    "observation": "The image shows a rural or semi-urban area with a dirt path, a small structure with a metal gate, and some greenery. There are no visible commercial activities, high-quality infrastructure, or significant urban functionality. The scene appears to be sparsely populated and lacks clear signs of economic vibrancy.",
+    "implication": {
+      "GDP": -0.3
+    },
+    "confidence": 0.6,
+    "source": "sample_case\\images\\street_3.jpg",
+    "spatial_layout": {
+      "building_condition": "moderate",
+      "street_activity": "low",
+      "commercial_presence": "absent",
+      "greenery": "present but sparse",
+      "transport_signals": "absent"
+    },
+    "key_elements": [
+      {
+        "type": "building",
+        "description": "A small, simple structure with a metal gate, suggesting limited infrastructure."
+      },
+      {
+        "type": "path",
+        "description": "A dirt path, indicating low maintenance and limited accessibility."
+      },
+      {
+        "type": "greenery",
+        "description": "Scattered trees and vegetation, but no significant landscaping or urban green spaces."
+      }
+    ],
+    "local_variation": "The area appears rural or semi-urban with minimal development.",
+    "coverage": "The image covers a small, localized area with limited visible context.",
+    "semantic_type": "street_structured",
+    "scene_type": "weakly_informative",
+    "informativeness": 0.2
+  },
+  {
+    "eid": "E_st_4",
+    "modality": "street",
+    "observation": "The image shows a street view with a mix of buildings, including a multi-story structure with red and white facades, and several smaller, unfinished or under-construction buildings. The area appears to be in a developing state, with visible construction materials and incomplete structures. The street is relatively quiet, with no visible activity or traffic. The environment includes some greenery, but it is sparse. There are utility poles and wires, indicating basic infrastructure.",
+    "implication": {
+      "GDP": -0.2
+    },
+    "confidence": 0.6,
+    "source": "sample_case\\images\\street_4.jpg",
+    "spatial_layout": {
+      "building_condition": "Mixed; some buildings appear well-maintained, while others are under construction or unfinished.",
+      "street_activity": "Low; no visible activity or traffic on the street.",
+      "commercial_presence": "Unclear; there are no clear signs of commercial activity or businesses.",
+      "greenery": "Sparse; some greenery is visible but not abundant.",
+      "transport_signals": "Basic; utility poles and wires are present, indicating some infrastructure, but no advanced transport signals are visible."
+    },
+    "key_elements": [
+      {
+        "type": "Building",
+        "description": "A multi-story building with red and white facades, appearing relatively well-maintained."
+      },
+      {
+        "type": "Construction",
+        "description": "Several unfinished or under-construction buildings, indicating development activity."
+      },
+      {
+        "type": "Infrastructure",
+        "description": "Utility poles and wires, suggesting basic infrastructure but no advanced transport signals."
+      }
+    ],
+    "local_variation": "The area shows a mix of developed and developing elements, with some maintained structures and others in the process of construction.",
+    "coverage": "The image provides a partial view of the street and surrounding buildings, but lacks comprehensive details on commercial activity or advanced infrastructure.",
+    "semantic_type": "street_structured",
+    "scene_type": "weakly_informative",
+    "informativeness": 0.3
+  },
+  {
+    "eid": "E_st_5",
+    "modality": "street",
+    "observation": "The image shows a street scene with a mix of residential and commercial buildings. There is a small vendor setup under an umbrella, indicating some commercial activity. The buildings appear to be of modest construction, with some showing signs of wear. The street is relatively quiet, with minimal visible activity or traffic. The area includes a mix of older, possibly low-rise structures and some newer, taller buildings in the background. There is limited greenery visible, and the overall impression is one of a functional but not particularly vibrant urban environment.",
+    "implication": {
+      "GDP": -0.2
+    },
+    "confidence": 0.7,
+    "source": "sample_case\\images\\street_5.jpg",
+    "spatial_layout": {
+      "building_condition": "moderate; some buildings show signs of wear, while others appear newer and better maintained",
+      "street_activity": "low; minimal visible activity, with only a vendor and a few pedestrians",
+      "commercial_presence": "limited; a small vendor setup under an umbrella is the primary commercial presence",
+      "greenery": "sparse; very little greenery is visible in the scene",
+      "transport_signals": "unclear; no clear transport signals or infrastructure are visible"
+    },
+    "key_elements": [
+      {
+        "type": "commercial_activity",
+        "description": "A small vendor setup under an umbrella, indicating some local commerce"
+      },
+      {
+        "type": "building_condition",
+        "description": "A mix of older, modest buildings and some newer structures in the background"
+      },
+      {
+        "type": "street_quality",
+        "description": "The street appears functional but not well-maintained, with a simple paved surface"
+      }
+    ],
+    "local_variation": "The scene shows a mix of older and newer buildings, suggesting some development but not high-density commercial activity.",
+    "coverage": "The image provides a panoramic view of the street, capturing a wide range of buildings and the immediate surroundings.",
+    "semantic_type": "street_structured",
+    "scene_type": "mixed",
+    "informativeness": 0.5
+  },
+  {
+    "eid": "E_st_6",
+    "modality": "street",
+    "observation": "The image depicts a street scene in an urban area with a mix of commercial and residential buildings. There are visible signs of activity, such as people walking and a parked motorbike. The buildings show a mix of conditions, with some appearing well-maintained and others showing signs of wear. Commercial signage and storefronts are present, indicating some level of economic activity. The street itself appears to be unpaved, and there is a lack of significant greenery. The overall scene suggests a moderately active but not highly developed urban environment.",
+    "implication": {
+      "GDP": 0.2
+    },
+    "confidence": 0.7,
+    "source": "sample_case\\images\\street_6.jpg",
+    "spatial_layout": {
+      "building_condition": "Mixed; some buildings appear well-maintained, while others show signs of wear.",
+      "street_activity": "Moderate; there are people walking and a parked motorbike, indicating some activity.",
+      "commercial_presence": "Present; there are storefronts and commercial signage, suggesting local businesses.",
+      "greenery": "Minimal; there is little to no visible greenery in the scene.",
+      "transport_signals": "Minimal; no clear traffic signals or road markings are visible."
+    },
+    "key_elements": [
+      {
+        "type": "Building",
+        "description": "A multi-story building with commercial storefronts on the ground floor and residential or office spaces above."
+      },
+      {
+        "type": "Transport",
+        "description": "A parked motorbike, indicating local transportation methods."
+      },
+      {
+        "type": "Commercial Activity",
+        "description": "Visible storefronts and signage, suggesting local businesses and economic activity."
+      },
+      {
+        "type": "Street Condition",
+        "description": "The street appears unpaved, indicating a less developed infrastructure."
+      }
+    ],
+    "local_variation": "The scene shows a mix of commercial and residential uses, with varying building conditions and moderate street activity.",
+    "coverage": "The image provides a panoramic view of the street, capturing a broad range of elements including buildings, street activity, and commercial presence.",
+    "semantic_type": "street_structured",
+    "scene_type": "mixed",
+    "informativeness": 0.6
+  },
+  {
+    "eid": "E_st_7",
+    "modality": "street",
+    "observation": "The image shows a street scene with a mix of residential and possibly commercial buildings. There is a pink building with a black door, a white vehicle parked nearby, and a blue shipping container with text on it. The area appears to have some greenery, including a tree, and a mix of paved and unpaved surfaces. The overall environment suggests a modest urban setting with limited activity and infrastructure.",
+    "implication": {
+      "GDP": -0.2
+    },
+    "confidence": 0.6,
+    "source": "sample_case\\images\\street_7.jpg",
+    "spatial_layout": {
+      "building_condition": "moderate; some buildings appear functional but not high-end, with visible wear on structures like the shipping container and fence.",
+      "street_activity": "low; minimal visible activity, with only one person standing near the pink building.",
+      "commercial_presence": "unclear; the pink building could be commercial, but there are no clear signs of active businesses or services.",
+      "greenery": "moderate; there is a tree and some grass, but overall greenery is not abundant.",
+      "transport_signals": "limited; a white vehicle is parked, but there are no visible traffic signals or infrastructure indicating high mobility."
+    },
+    "key_elements": [
+      {
+        "type": "building",
+        "description": "A pink building with a black door, possibly residential or commercial, showing moderate maintenance."
+      },
+      {
+        "type": "vehicle",
+        "description": "A white vehicle parked near the building, indicating some level of transportation activity."
+      },
+      {
+        "type": "shipping_container",
+        "description": "A blue shipping container with text, suggesting possible storage or commercial use, but not actively engaged in commerce."
+      }
+    ],
+    "local_variation": "The scene shows a mix of structures, including a pink building, a shipping container, and a fence, indicating a potentially mixed-use area with some commercial or storage functions.",
+    "coverage": "The image provides a partial view of the street and surrounding area, but lacks comprehensive details about the broader urban context.",
+    "semantic_type": "street_structured",
+    "scene_type": "weakly_informative",
+    "informativeness": 0.3
+  },
+  {
+    "eid": "E_st_8",
+    "modality": "street",
+    "observation": "The image shows a street view of a semi-urban area with a mix of residential and possibly commercial buildings. The road is unpaved, and there is visible greenery along the sides. The buildings appear to be of moderate quality, with some showing signs of wear. There are utility poles and wires, indicating basic infrastructure. The scene is relatively quiet with no visible traffic or pedestrians.",
+    "implication": {
+      "GDP": -0.2
+    },
+    "confidence": 0.6,
+    "source": "sample_case\\images\\street_8.jpg",
+    "spatial_layout": {
+      "building_condition": "Moderate, with some signs of wear and basic construction materials.",
+      "street_activity": "Low, with no visible traffic or pedestrians.",
+      "commercial_presence": "Unclear, as there are no distinct commercial signs or activity visible.",
+      "greenery": "Present along the sides of the road, indicating some level of landscaping.",
+      "transport_signals": "Minimal, with no visible traffic lights or signage."
+    },
+    "key_elements": [
+      {
+        "type": "Road condition",
+        "description": "The road is unpaved, suggesting limited infrastructure investment."
+      },
+      {
+        "type": "Building condition",
+        "description": "Buildings appear to be of moderate quality, with some signs of wear."
+      },
+      {
+        "type": "Greenery",
+        "description": "Greenery is present along the road, indicating some level of landscaping."
+      }
+    ],
+    "local_variation": "The area appears to be a mix of residential and possibly commercial use, but lacks clear commercial activity or high-quality infrastructure.",
+    "coverage": "The image provides a wide-angle view of the street and surrounding area, but lacks detailed information on commercial activity or high-quality urban features.",
+    "semantic_type": "street_structured",
+    "scene_type": "weakly_informative",
+    "informativeness": 0.3
+  },
+  {
+    "eid": "E_st_9",
+    "modality": "street",
+    "observation": "The image depicts a street scene with a mix of residential and commercial buildings. There is a multi-story building with balconies on the right, and a single-story commercial building on the left. The street appears to have some activity, with a few people visible and vehicles parked along the side. The buildings show signs of wear, and the overall environment suggests a moderately active urban area.",
+    "implication": {
+      "GDP": 0.2
+    },
+    "confidence": 0.7,
+    "source": "sample_case\\images\\street_9.jpg",
+    "spatial_layout": {
+      "building_condition": "Moderate wear, with some visible aging on the buildings but no significant signs of disrepair.",
+      "street_activity": "Low to moderate activity, with a few pedestrians and parked vehicles, indicating some level of daily use.",
+      "commercial_presence": "Present, with visible storefronts and signs, suggesting local commerce.",
+      "greenery": "Minimal, with no significant green spaces or trees visible in the immediate area.",
+      "transport_signals": "Basic, with visible roads and sidewalks, but no advanced traffic infrastructure or signage."
+    },
+    "key_elements": [
+      {
+        "type": "Building",
+        "description": "A multi-story residential building with balconies, indicating a mix of living spaces."
+      },
+      {
+        "type": "Commercial Building",
+        "description": "A single-story building with visible storefronts, suggesting local businesses."
+      },
+      {
+        "type": "Street Activity",
+        "description": "Low to moderate pedestrian and vehicular activity, indicating some level of daily urban life."
+      },
+      {
+        "type": "Infrastructure",
+        "description": "Basic road and sidewalk infrastructure, with no advanced urban amenities visible."
+      }
+    ],
+    "local_variation": "The scene shows a mix of residential and commercial uses, with moderate activity and some signs of wear on the buildings. The presence of storefronts suggests local commerce, but the overall environment does not indicate high urban intensity or advanced infrastructure.",
+    "coverage": "The image provides a partial view of the street and surrounding buildings, capturing a mix of residential and commercial elements but not a comprehensive view of the entire area.",
+    "semantic_type": "street_structured",
+    "scene_type": "mixed",
+    "informativeness": 0.5
+  }
+]

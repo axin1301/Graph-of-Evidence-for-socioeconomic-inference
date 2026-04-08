@@ -1,0 +1,21 @@
+{
+  "task": "GDP",
+  "final_estimate": 4.2642,
+  "confidence": 0.6375,
+  "summary": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average. The final estimate is 4.26, with a confidence of 0.64, primarily grounded in the solver result. Supporting evidence includes satellite imagery (E_sat_0) and structural data (E_st_6, E_st_9), while contradicting evidence includes structural data (E_st_0, E_st_1, E_st_2, E_st_3, E_st_5). Major latent factors considered include density intensity, commercial activity, residential quality, connectivity accessibility, and green amenities.",
+  "supporting_evidence": [
+    "E_sat_0",
+    "E_st_6",
+    "E_st_9"
+  ],
+  "contradicting_evidence": [
+    "E_st_0",
+    "E_st_1",
+    "E_st_2",
+    "E_st_3",
+    "E_st_5"
+  ],
+  "uncertainty_note": "The uncertainty is moderate, as indicated by the confidence score of 0.64. The presence of both supporting and contradicting evidence suggests some ambiguity in the assessment, but the solver result provides a clear estimate within the given range.",
+  "case_id": "16493_19743",
+  "setting": "sample_run"
+}

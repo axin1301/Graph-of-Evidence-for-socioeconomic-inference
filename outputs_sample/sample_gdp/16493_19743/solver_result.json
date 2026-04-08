@@ -1,0 +1,491 @@
+{
+  "method": "hierarchical_verification_aware_solver_v3",
+  "target_field": "GDP",
+  "normalized_range": [
+    0.0,
+    9.9
+  ],
+  "trace_features_used": {
+    "has_trace": true,
+    "initial_status": "PASS",
+    "final_status": "PASS",
+    "refinement_used": false,
+    "reflection_triggered": false,
+    "num_unused_conflicts_initial": 0,
+    "num_addressed_conflicts_final": 0,
+    "num_issues_initial": 0,
+    "num_issues_final": 0,
+    "support_balance": 0.42,
+    "claim_stability_delta": 0.0,
+    "confidence_delta": 0.0,
+    "initial_positive_support_score": 0.42,
+    "initial_negative_conflict_score": 0.0,
+    "final_support_count": 11,
+    "final_satellite_support_count": 1,
+    "final_street_support_count": 10,
+    "target_field": "GDP"
+  },
+  "calibrated_evidences": {
+    "E_sat_0": {
+      "evidence_id": "E_sat_0",
+      "original_confidence": 0.7,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.1109,
+      "calibrated_confidence": 0.5041,
+      "modality": "satellite",
+      "observation": "The image shows a densely built-up urban area with a grid-like pattern of buildings. There are patches of greenery and open spaces, as well as visible roads and water bodies. The overall layout suggests a mix of residential and possibly commercial structures, but no clear indicators of major economic hubs or infrastructure are apparent."
+    },
+    "E_st_0": {
+      "evidence_id": "E_st_0",
+      "original_confidence": 0.8,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2478,
+      "calibrated_confidence": 0.4422,
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of buildings, some of which appear to be commercial establishments. The buildings have bright, colorful facades, and there are signs of activity, such as people walking and some stalls or shops. The street is unpaved, and there is minimal greenery. A few vehicles are visible, indicating some level of mobility. The overall impression is of a modest, possibly low-income area with basic commercial activity."
+    },
+    "E_st_1": {
+      "evidence_id": "E_st_1",
+      "original_confidence": 0.7,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2471,
+      "calibrated_confidence": 0.3679,
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of residential and commercial structures. The buildings appear to be modest in size and construction, with some showing signs of wear. The street is unpaved and appears to be in a state of disrepair. There is a small commercial structure on the right side, but overall activity and amenities are limited. The surrounding area includes some vegetation and utility poles, but the overall impression is one of a less developed urban environment."
+    },
+    "E_st_2": {
+      "evidence_id": "E_st_2",
+      "original_confidence": 0.8,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2424,
+      "calibrated_confidence": 0.4476,
+      "modality": "street",
+      "observation": "The image depicts a street scene in a low-density urban or peri-urban area. The buildings appear to be simple, with some residential and small commercial structures. The road is unpaved, and there is minimal activity visible. The area has basic infrastructure, such as streetlights and utility poles, but the overall condition suggests limited maintenance and development."
+    },
+    "E_st_3": {
+      "evidence_id": "E_st_3",
+      "original_confidence": 0.6,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2316,
+      "calibrated_confidence": 0.3084,
+      "modality": "street",
+      "observation": "The image shows a rural or semi-urban area with a dirt path, a small structure with a metal gate, and some greenery. There are no visible commercial activities, high-quality infrastructure, or significant urban functionality. The scene appears to be sparsely populated and lacks clear signs of economic vibrancy."
+    },
+    "E_st_4": {
+      "evidence_id": "E_st_4",
+      "original_confidence": 0.6,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2406,
+      "calibrated_confidence": 0.2994,
+      "modality": "street",
+      "observation": "The image shows a street view with a mix of buildings, including a multi-story structure with red and white facades, and several smaller, unfinished or under-construction buildings. The area appears to be in a developing state, with visible construction materials and incomplete structures. The street is relatively quiet, with no visible activity or traffic. The environment includes some greenery, but it is sparse. There are utility poles and wires, indicating basic infrastructure."
+    },
+    "E_st_5": {
+      "evidence_id": "E_st_5",
+      "original_confidence": 0.7,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.25,
+      "calibrated_confidence": 0.365,
+      "modality": "street",
+      "observation": "The image shows a street scene with a mix of residential and commercial buildings. There is a small vendor setup under an umbrella, indicating some commercial activity. The buildings appear to be of modest construction, with some showing signs of wear. The street is relatively quiet, with minimal visible activity or traffic. The area includes a mix of older, possibly low-rise structures and some newer, taller buildings in the background. There is limited greenery visible, and the overall impression is one of a functional but not particularly vibrant urban environment."
+    },
+    "E_st_6": {
+      "evidence_id": "E_st_6",
+      "original_confidence": 0.7,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2411,
+      "calibrated_confidence": 0.3739,
+      "modality": "street",
+      "observation": "The image depicts a street scene in an urban area with a mix of commercial and residential buildings. There are visible signs of activity, such as people walking and a parked motorbike. The buildings show a mix of conditions, with some appearing well-maintained and others showing signs of wear. Commercial signage and storefronts are present, indicating some level of economic activity. The street itself appears to be unpaved, and there is a lack of significant greenery. The overall scene suggests a moderately active but not highly developed urban environment."
+    },
+    "E_st_7": {
+      "evidence_id": "E_st_7",
+      "original_confidence": 0.6,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2409,
+      "calibrated_confidence": 0.2991,
+      "modality": "street",
+      "observation": "The image shows a street scene with a mix of residential and possibly commercial buildings. There is a pink building with a black door, a white vehicle parked nearby, and a blue shipping container with text on it. The area appears to have some greenery, including a tree, and a mix of paved and unpaved surfaces. The overall environment suggests a modest urban setting with limited activity and infrastructure."
+    },
+    "E_st_8": {
+      "evidence_id": "E_st_8",
+      "original_confidence": 0.6,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2498,
+      "calibrated_confidence": 0.2902,
+      "modality": "street",
+      "observation": "The image shows a street view of a semi-urban area with a mix of residential and possibly commercial buildings. The road is unpaved, and there is visible greenery along the sides. The buildings appear to be of moderate quality, with some showing signs of wear. There are utility poles and wires, indicating basic infrastructure. The scene is relatively quiet with no visible traffic or pedestrians."
+    },
+    "E_st_9": {
+      "evidence_id": "E_st_9",
+      "original_confidence": 0.7,
+      "source_reliability": 0.6,
+      "redundancy_penalty": 0.2373,
+      "calibrated_confidence": 0.3777,
+      "modality": "street",
+      "observation": "The image depicts a street scene with a mix of residential and commercial buildings. There is a multi-story building with balconies on the right, and a single-story commercial building on the left. The street appears to have some activity, with a few people visible and vehicles parked along the side. The buildings show signs of wear, and the overall environment suggests a moderately active urban area."
+    }
+  },
+  "factor_scores": [
+    {
+      "factor_id": "F_density_intensity",
+      "factor_name": "density_intensity",
+      "score": 0.0782,
+      "top_evidence": [
+        "E_sat_0"
+      ],
+      "evidence_links": [
+        {
+          "evidence_id": "E_sat_0",
+          "contribution": 0.0848,
+          "support_strength": 0.1683,
+          "evidence_confidence": 0.5041
+        }
+      ]
+    },
+    {
+      "factor_id": "F_commercial_activity",
+      "factor_name": "commercial_activity",
+      "score": 0.1612,
+      "top_evidence": [
+        "E_sat_0",
+        "E_st_9",
+        "E_st_6"
+      ],
+      "evidence_links": [
+        {
+          "evidence_id": "E_sat_0",
+          "contribution": 0.0737,
+          "support_strength": 0.1463,
+          "evidence_confidence": 0.5041
+        },
+        {
+          "evidence_id": "E_st_9",
+          "contribution": 0.0603,
+          "support_strength": 0.1597,
+          "evidence_confidence": 0.3777
+        },
+        {
+          "evidence_id": "E_st_6",
+          "contribution": 0.0581,
+          "support_strength": 0.1553,
+          "evidence_confidence": 0.3739
+        }
+      ]
+    },
+    {
+      "factor_id": "F_residential_quality",
+      "factor_name": "residential_quality",
+      "score": 0.0975,
+      "top_evidence": [
+        "E_st_9",
+        "E_st_6"
+      ],
+      "evidence_links": [
+        {
+          "evidence_id": "E_st_9",
+          "contribution": 0.0547,
+          "support_strength": 0.1449,
+          "evidence_confidence": 0.3777
+        },
+        {
+          "evidence_id": "E_st_6",
+          "contribution": 0.0533,
+          "support_strength": 0.1426,
+          "evidence_confidence": 0.3739
+        }
+      ]
+    },
+    {
+      "factor_id": "F_connectivity_accessibility",
+      "factor_name": "connectivity_accessibility",
+      "score": 0.0682,
+      "top_evidence": [
+        "E_sat_0"
+      ],
+      "evidence_links": [
+        {
+          "evidence_id": "E_sat_0",
+          "contribution": 0.0732,
+          "support_strength": 0.1452,
+          "evidence_confidence": 0.5041
+        }
+      ]
+    },
+    {
+      "factor_id": "F_green_amenity",
+      "factor_name": "green_amenity",
+      "score": 0.0981,
+      "top_evidence": [
+        "E_st_9",
+        "E_st_6"
+      ],
+      "evidence_links": [
+        {
+          "evidence_id": "E_st_9",
+          "contribution": 0.0556,
+          "support_strength": 0.1473,
+          "evidence_confidence": 0.3777
+        },
+        {
+          "evidence_id": "E_st_6",
+          "contribution": 0.0532,
+          "support_strength": 0.1422,
+          "evidence_confidence": 0.3739
+        }
+      ]
+    },
+    {
+      "factor_id": "F_industrial_activity",
+      "factor_name": "industrial_activity",
+      "score": 0.0,
+      "top_evidence": [],
+      "evidence_links": []
+    },
+    {
+      "factor_id": "F_public_service_presence",
+      "factor_name": "public_service_presence",
+      "score": 0.0,
+      "top_evidence": [],
+      "evidence_links": []
+    },
+    {
+      "factor_id": "F_built_environment_order",
+      "factor_name": "built_environment_order",
+      "score": 0.0,
+      "top_evidence": [],
+      "evidence_links": []
+    }
+  ],
+  "solved_claims": [
+    {
+      "claim_id": "C_GDP_0",
+      "task": "GDP",
+      "hypothesis": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average.",
+      "original_estimate": 4.76864925063221,
+      "original_confidence": 0.75,
+      "prior_score": 0.4971,
+      "bucket_anchor": 0.4817,
+      "evidence_anchor": 0.5586,
+      "direct_evidence_score": -0.3951,
+      "factor_graph_score": 0.0,
+      "raw_factor_graph_score": 0.0,
+      "factor_gate": 0.25,
+      "graph_score": 0.4119,
+      "routing_weights": {
+        "g_prior": 0.8,
+        "g_direct": 0.3431,
+        "g_factor": 0.3689,
+        "w_prior": 0.5291,
+        "w_direct": 0.2269,
+        "w_factor": 0.244,
+        "num_active_factors": 0,
+        "num_direct_support": 3
+      },
+      "verification_bonus": 0.015,
+      "uncertainty_penalty": 0.0,
+      "disagreement_penalty": 0.0,
+      "low_value_bonus": 0.0,
+      "solved_claim_score": 0.4307,
+      "solved_estimate": 4.2642,
+      "solved_confidence": 0.6375,
+      "top_supporting_evidence": [
+        "E_sat_0",
+        "E_st_9",
+        "E_st_6"
+      ],
+      "top_conflicting_evidence": [
+        "E_st_2",
+        "E_st_0",
+        "E_st_1",
+        "E_st_5",
+        "E_st_3"
+      ],
+      "top_factors": [
+        "density_intensity",
+        "commercial_activity",
+        "residential_quality",
+        "connectivity_accessibility",
+        "green_amenity"
+      ],
+      "direct_contributions": [
+        {
+          "edge_id": "edge::E_sat_0::support::C_GDP_0",
+          "evidence_id": "E_sat_0",
+          "support_strength": 0.14,
+          "conflict_strength": 0.0,
+          "evidence_confidence": 0.5041,
+          "net_contribution": 0.0706
+        },
+        {
+          "edge_id": "edge::E_st_0::support::C_GDP_0",
+          "evidence_id": "E_st_0",
+          "support_strength": 0.0,
+          "conflict_strength": 0.24,
+          "evidence_confidence": 0.4422,
+          "net_contribution": -0.1539
+        },
+        {
+          "edge_id": "edge::E_st_1::support::C_GDP_0",
+          "evidence_id": "E_st_1",
+          "support_strength": 0.0,
+          "conflict_strength": 0.28,
+          "evidence_confidence": 0.3679,
+          "net_contribution": -0.1344
+        },
+        {
+          "edge_id": "edge::E_st_2::support::C_GDP_0",
+          "evidence_id": "E_st_2",
+          "support_strength": 0.0,
+          "conflict_strength": 0.32,
+          "evidence_confidence": 0.4476,
+          "net_contribution": -0.2077
+        },
+        {
+          "edge_id": "edge::E_st_3::support::C_GDP_0",
+          "evidence_id": "E_st_3",
+          "support_strength": 0.0,
+          "conflict_strength": 0.18,
+          "evidence_confidence": 0.3084,
+          "net_contribution": -0.0724
+        },
+        {
+          "edge_id": "edge::E_st_4::support::C_GDP_0",
+          "evidence_id": "E_st_4",
+          "support_strength": 0.0,
+          "conflict_strength": 0.12,
+          "evidence_confidence": 0.2994,
+          "net_contribution": -0.0469
+        },
+        {
+          "edge_id": "edge::E_st_5::support::C_GDP_0",
+          "evidence_id": "E_st_5",
+          "support_strength": 0.0,
+          "conflict_strength": 0.14,
+          "evidence_confidence": 0.365,
+          "net_contribution": -0.0741
+        },
+        {
+          "edge_id": "edge::E_st_6::support::C_GDP_0",
+          "evidence_id": "E_st_6",
+          "support_strength": 0.14,
+          "conflict_strength": 0.0,
+          "evidence_confidence": 0.3739,
+          "net_contribution": 0.0288
+        },
+        {
+          "edge_id": "edge::E_st_7::support::C_GDP_0",
+          "evidence_id": "E_st_7",
+          "support_strength": 0.0,
+          "conflict_strength": 0.12,
+          "evidence_confidence": 0.2991,
+          "net_contribution": -0.0468
+        },
+        {
+          "edge_id": "edge::E_st_8::support::C_GDP_0",
+          "evidence_id": "E_st_8",
+          "support_strength": 0.0,
+          "conflict_strength": 0.12,
+          "evidence_confidence": 0.2902,
+          "net_contribution": -0.0454
+        },
+        {
+          "edge_id": "edge::E_st_9::support::C_GDP_0",
+          "evidence_id": "E_st_9",
+          "support_strength": 0.14,
+          "conflict_strength": 0.0,
+          "evidence_confidence": 0.3777,
+          "net_contribution": 0.0291
+        }
+      ],
+      "factor_contributions": [
+        {
+          "edge_id": "edge::F_density_intensity::factor_claim::C_GDP_0",
+          "factor_id": "F_density_intensity",
+          "factor_name": "density_intensity",
+          "factor_score": 0.0782,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.315,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_commercial_activity::factor_claim::C_GDP_0",
+          "factor_id": "F_commercial_activity",
+          "factor_name": "commercial_activity",
+          "factor_score": 0.1612,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.63,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_residential_quality::factor_claim::C_GDP_0",
+          "factor_id": "F_residential_quality",
+          "factor_name": "residential_quality",
+          "factor_score": 0.0975,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.175,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_connectivity_accessibility::factor_claim::C_GDP_0",
+          "factor_id": "F_connectivity_accessibility",
+          "factor_name": "connectivity_accessibility",
+          "factor_score": 0.0682,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.42,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_green_amenity::factor_claim::C_GDP_0",
+          "factor_id": "F_green_amenity",
+          "factor_name": "green_amenity",
+          "factor_score": 0.0981,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.07,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_industrial_activity::factor_claim::C_GDP_0",
+          "factor_id": "F_industrial_activity",
+          "factor_name": "industrial_activity",
+          "factor_score": 0.0,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.245,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_public_service_presence::factor_claim::C_GDP_0",
+          "factor_id": "F_public_service_presence",
+          "factor_name": "public_service_presence",
+          "factor_score": 0.0,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.14,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        },
+        {
+          "edge_id": "edge::F_built_environment_order::factor_claim::C_GDP_0",
+          "factor_id": "F_built_environment_order",
+          "factor_name": "built_environment_order",
+          "factor_score": 0.0,
+          "effective_factor_score": 0.0,
+          "support_strength": 0.14,
+          "conflict_strength": 0.0,
+          "net_contribution": 0.0
+        }
+      ]
+    }
+  ],
+  "config": {
+    "factor_prior_scale": 0.7,
+    "redundancy_penalty_scale": 0.05,
+    "verification_bonus_scale": 0.5,
+    "estimate_temperature": 1.1
+  }
+}

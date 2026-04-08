@@ -1,0 +1,25 @@
+{
+  "cid": "C_GDP_0",
+  "task": "GDP",
+  "hypothesis": "The urban area exhibits characteristics of moderate development, with a mix of residential and commercial structures, but lacks significant indicators of high economic activity or infrastructure. The presence of unpaved roads, basic infrastructure, and limited greenery suggests a GDP level that is below average.",
+  "estimate": 4.76864925063221,
+  "confidence": 0.75,
+  "support_eids": [
+    "E_sat_0",
+    "E_st_0",
+    "E_st_1",
+    "E_st_2",
+    "E_st_3",
+    "E_st_4",
+    "E_st_5",
+    "E_st_6",
+    "E_st_7",
+    "E_st_8",
+    "E_st_9"
+  ],
+  "contradict_eids": [],
+  "level": "slightly_low",
+  "level_score": 0.4760467631434536,
+  "scale_type": "normalized",
+  "unit": null
+}
