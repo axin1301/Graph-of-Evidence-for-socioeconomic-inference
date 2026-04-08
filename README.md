@@ -35,11 +35,6 @@ The pipeline performs:
 6. edge weighting and final claim solving
 7. final report generation
 
-## Notes
-
-- This submission version removes hard-coded credentials and non-essential local setup.
-- API credentials must be provided through environment variables.
-- Cached evidence and outputs are written by `main_update.py` to the configured output directory.
 
 ## Run a Sample Case
 
